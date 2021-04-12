@@ -14,3 +14,28 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* LINKS */
+
+.link {
+  color: #ffffff;
+}
+
+.link:hover {
+  color: #005881;
+}
+
+/* FOOTER */
+#footer {
+  width: 100%;
+  color: #ffffff;
+  background-color: #242424;
+}
+
+#footer-bottom {
+  background-color: #181818;
+}
+
+#footer-link {
+  color: #434343;
+}
