@@ -34,6 +34,14 @@ a {
   color: #005881;
 }
 
+/* CONTACT PAGE*/
+#contact-form {
+  margin: auto;
+  padding: 5%;
+  text-align: center;
+  width: 70%;
+}
+
 /* FOOTER */
 #footer {
   width: 100%;
