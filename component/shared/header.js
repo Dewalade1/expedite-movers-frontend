@@ -9,10 +9,12 @@ export default function Header() {
       <div className="pt-2 pb-4 mr-4 pr-4 pl-4" id="header">
         <Row>
           <Col className="pl-4 ml-4">
-            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1616559517/Moviecritics/images/logos/moviecritics-logo-transparent-background_sjnfhk.png" width={180} height={50} alt="sitelogo" />
+            <div className="ml-4">
+              <img src="https://res.cloudinary.com/hellodewa/image/upload/v1616559517/Moviecritics/images/logos/moviecritics-logo-transparent-background_sjnfhk.png" width={180} height={50} alt="sitelogo" />
+            </div>
           </Col>
-          <Col className="pr-4 mr-4">
-            <ul className="nav d-flex justify-content-end mr-4 pr-4">
+          <Col>
+            <ul className="nav d-flex justify-content-center">
               <li className="nav-item">
                 <Link href="/">
                   <a className="nav-link active">Home</a>
