@@ -11,9 +11,11 @@ export default function Contact () {
     return (
       <Layout>
         <Row>
-          <Col className="ml-2 pl-4 mr-2 pr-4 pt-4 align-items-center">
+          <Col className="pt-4 align-items-center">
             <form className="mt-4 pt-4" id="contact-form">
-              <h4 className="mt-4 pt-2">Contact Us</h4>
+              <h3 className="mt-4 pt-2 mb-4 primary-title">
+                <b>Contact Us</b>
+              </h3>
               <div className="mb-4">
                 <TextField
                   id="name-textfield"
@@ -43,7 +45,7 @@ export default function Contact () {
                   id="message-textfield"
                   label="message"
                   multiline
-                  rows={5}
+                  rows={6}
                   fullWidth
                   placeholder="Enter your message here...."
                   variant="outlined"
@@ -52,13 +54,13 @@ export default function Contact () {
                   }}
                 />
               </div>
-              <Button variant="contained" size="large" fullwidth disableElevation color="primary">
+              <Button variant="contained" width="100%" size="large" disableElevation color="primary" fullWidth>
                 Send message
               </Button>
             </form>
           </Col>
           <Col>
-            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1619447228/expeditemovers/images/sys/contact-us-side-image_ql8vme.jpg" alt="man calling on a phone" width="100%" />
+            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1619468681/expeditemovers/images/sys/contact-us-side-image_ql8vme.jpg" alt="man calling on a phone" width="100%" />
           </Col>
         </Row>
       </Layout>
