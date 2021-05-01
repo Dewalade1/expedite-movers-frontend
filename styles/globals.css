@@ -16,12 +16,29 @@ a {
   box-sizing: border-box;
 }
 
+.section-wrapper {
+  height: 662px;
+}
+
 /* HEADER */
 
 #header {
   background-color: #ffffff;
   position: relative;
   width: 100%;
+}
+
+/* HOME PAGE */
+#landing-page {
+  background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1619879139/expeditemovers/images/sys/landing-page-background_qul3zi.jpg');
+}
+
+#main-landing-page-text {
+  color: #ffffff;
+}
+
+.landing-page-text {
+   color: #d7dcef;
 }
 
 /* TEXTS */
@@ -33,7 +50,7 @@ a {
 /* LINKS */
 
 .link {
-  color: #ffffff;
+  color: #d7dcef;
 }
 
 .link:hover {
