@@ -6,7 +6,7 @@ import { Row, Col } from "react-bootstrap";
 
 export default function Header() {
     return (
-      <div className="pt-2 pb-4 mr-4 pr-4 pl-4" id="header">
+      <div className="pt-2 pb-4 pl-4" id="header">
         <Row>
           <Col className="pl-4 ml-4">
             <div className="ml-4">

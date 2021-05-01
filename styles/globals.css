@@ -24,6 +24,8 @@ a {
   width: 100%;
 }
 
+/* TEXTS */
+
 .primary-title {
   color:#005881;
 }
@@ -48,15 +50,35 @@ a {
 
 /* FOOTER */
 #footer {
-  width: 100%;
+  background: #4f4e4e;
   color: #ffffff;
-  background-color: #242424;
+  width: 100%;
+}
+
+.footer-title {
+  color: #A9A9A9;
+}
+
+.footer-text {
+  color: #d7dcef;
 }
 
 #footer-bottom {
-  background-color: #181818;
+  background: #403f3f;
+  color: #A9A9A9;
 }
 
-#footer-link {
-  color: #434343;
+.footer-link {
+  color: #d7dcef;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+h6 > .extraIcon {
+    color: #f3bdd7;
+    display: inline-block;
 }
