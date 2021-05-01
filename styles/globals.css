@@ -68,6 +68,8 @@ a {
   color: #A9A9A9;
 }
 
+/* FOOTER LINKS */
+
 .footer-link {
   color: #d7dcef;
   text-decoration: none;
@@ -78,7 +80,54 @@ a {
   text-decoration: none;
 }
 
-h6 > .extraIcon {
-    color: #f3bdd7;
-    display: inline-block;
+.site-map-icon {
+  color: #A9A9A9;
+  text-decoration: none;
+}
+
+.contact-icon {
+  color: #A9A9A9;
+  text-decoration: none;
+}
+
+#facebook-icon {
+  color: #A9A9A9;
+}
+
+#twitter-icon {
+  color: #A9A9A9;
+}
+
+#instagram-icon {
+  color: #A9A9A9;
+}
+
+#linkdin-icon {
+  color: #A9A9A9;
+}
+
+.footer-link:hover > .site-map-icon {
+  color: #09caff
+}
+
+.footer-link:hover > .contact-icon {
+  color: #30d388;
+  text-decoration: none;
+}
+
+.footer-link:hover > #facebook-icon {
+    color: #3b5998;
+    text-decoration: none;
+}
+
+.footer-link:hover > #twitter-icon {
+  color: #00acee;
+}
+
+.footer-link:hover > #instagram-icon {
+  color: #fccc63;
+}
+
+.footer-link:hover > #linkdin-icon {
+  color: #0072b1;
 }
