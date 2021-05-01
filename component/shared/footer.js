@@ -18,10 +18,13 @@ export default function Footer () {
     return (
       <footer id="footer">
         <Row className="pt-4 pb-4" id="footer-top">
-          <Col className="justify-content-center">
+          <Col className="pl-4 justify-content-center" md={4}>
+            <div className="ml-4 pl-4 mt-4">
+              <img src="https://res.cloudinary.com/hellodewa/image/upload/v1616559517/Moviecritics/images/logos/moviecritics-logo-transparent-background_sjnfhk.png" width={180} height={50} alt="sitelogo" />
+            </div>
             <p className="mt-4 ml-4 pl-4 footer-text">Expeditemovers Ltd. is a highly dynamic logistic service provider positioned to render efficient and personalized service to her esteemed clients with 100% satisfaction guaranteed.</p>
           </Col>
-          <Col className="pl-4 justify-content-center">
+          <Col className="pl-4 justify-content-center" md={2}>
             <b>
               <h5 className="mt-4 pl-4 ml-4 footer-title">Site Map</h5>
             </b>
@@ -30,122 +33,122 @@ export default function Footer () {
                 <Link href="/">
                   <a>
                     <h6 className="footer-link">
-                      <ChevronRightIcon /> Home
+                      <ChevronRightIcon className="site-map-icon" /> Home
                     </h6>
                   </a>
                 </Link>
               </li>
               <li className="list-unstyled">
                 <Link href="/services">
-                  <a className="footer-link">
-                    <h6>
-                      <ChevronRightIcon /> Services
+                  <a>
+                    <h6 className="footer-link">
+                      <ChevronRightIcon className="site-map-icon" /> Services
                     </h6>
                   </a>
                 </Link>
               </li>
               <li className="list-unstyled">
                 <Link href="/about">
-                  <a className="footer-link">
-                    <h6>
-                      <ChevronRightIcon /> About Us
+                  <a>
+                    <h6 className="footer-link">
+                      <ChevronRightIcon className="site-map-icon" /> About Us
                     </h6>
                   </a>
                 </Link>
               </li>
               <li className="list-unstyled">
                 <Link href="/contact">
-                  <a className="footer-link">
-                    <h6>
-                      <ChevronRightIcon /> Contact Us
+                  <a>
+                    <h6 className="footer-link">
+                      <ChevronRightIcon className="site-map-icon" /> Contact Us
                     </h6>
                   </a>
                 </Link>
               </li>
               <li className="list-unstyled">
                 <Link href="/locations">
-                  <a className="footer-link">
-                    <h6>
-                      <ChevronRightIcon /> Locations
+                  <a>
+                    <h6 className="footer-link">
+                      <ChevronRightIcon className="site-map-icon" /> Locations
                     </h6>
                   </a>
                 </Link>
               </li>
             </ul>
           </Col>
-          <Col className="justify-content-center">
+          <Col className="pr-4 mr-4 justify-content-center" md={2}>
             <b>
               <h5 className="mt-4 ml-4 pl-3 footer-title">Our social Media</h5>
             </b>
             <ul>
               <li className="list-unstyled">
                 <Link href="#">
-                  <a className="footer-link">
-                    <h5>
-                      <FacebookIcon /> Facebook
+                  <a>
+                    <h5 className="footer-link">
+                      <FacebookIcon className="socials-icon" /> Facebook
                     </h5>
                   </a>
                 </Link>
               </li>
               <li className="list-unstyled">
                 <Link href="#">
-                  <a className="footer-link">
-                    <h5>
-                      <TwitterIcon /> Twitter
+                  <a>
+                    <h5 className="footer-link">
+                      <TwitterIcon className="socials-icon" /> Twitter
                     </h5>
                   </a>
                 </Link>
               </li>
               <li className="list-unstyled">
                 <Link href="#">
-                  <a className="footer-link">
-                    <h5>
-                      <InstagramIcon /> Instagram
+                  <a>
+                    <h5 className="footer-link">
+                      <InstagramIcon className="socials-icon" /> Instagram
                     </h5>
                   </a>
                 </Link>
               </li>
               <li className="list-unstyled">
                 <Link href="#">
-                  <a className="footer-link">
-                    <h5>
-                      <LinkedInIcon /> LinkdIn
+                  <a>
+                    <h5 className="footer-link">
+                      <LinkedInIcon className="socials-icon" /> LinkdIn
                     </h5>
                   </a>
                 </Link>
               </li>
             </ul>
           </Col>
-          <Col className="justify-content-center">
+          <Col className="ml-4 pl-4 justify-content-center" md={3}>
             <h5 className="mt-4 footer-title mb-2">Contact Us</h5>
             <Link href="tel:+2348023062321">
-              <a className="footer-link">
-                <h5>
-                  <PhoneIcon className="mr-1" />
+              <a>
+                <h5 className="footer-link">
+                  <PhoneIcon className="mr-1 contact-icon" />
                   +234 8023062321
                 </h5>
               </a>
             </Link>
             <Link href="tel:+2347065156145">
-              <a className="footer-link">
-                <h5>
-                  <PhoneOutlinedIcon className="mr-1" />
+              <a>
+                <h5 className="footer-link">
+                  <PhoneOutlinedIcon className="mr-1 contact-icon" />
                   +234 7065156145
                 </h5>
               </a>
             </Link>
             <Link href="mailto:info@expeditemoversng.com">
-              <a className="footer-link">
-                <h5>
-                  <MailOutlineIcon className="mr-1" />
+              <a>
+                <h5 className="footer-link">
+                  <MailOutlineIcon className="mr-1 contact-icon" />
                   info@expeditemoversng.com
                 </h5>
               </a>
             </Link>
             <Link href="mailto:expeditemovers@gmail.com">
-              <a className="footer-link">
-                <h5>
-                  <AlternateEmailIcon className="mr-1" />
+              <a>
+                <h5 className="footer-link">
+                  <AlternateEmailIcon className="mr-1 contact-icon" />
                   expeditemovers@gmail.com
                 </h5>
               </a>
