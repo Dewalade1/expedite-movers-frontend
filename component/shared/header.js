@@ -15,7 +15,6 @@ export default function Header() {
     } else {
       setColorChange(false);
     }
-    console.log(colorChange);
   };
   window.addEventListener('scroll', changeNavbarColor);
 
@@ -26,35 +25,35 @@ export default function Header() {
 
     return (
       <Row className={colorChange ? "navbar color-change pt-3 pb-3 pl-4" : "navbar pt-3 pb-3 pl-4"} id="header">
-        <Col className="pl-4 ml-4">
+        <Col className="pl-4">
           <div className="ml-4">
             <img src="https://res.cloudinary.com/hellodewa/image/upload/v1616559517/Moviecritics/images/logos/moviecritics-logo-transparent-background_sjnfhk.png" width={180} height={50} alt="sitelogo" />
           </div>
         </Col>
         <Col>
-          <ul className="nav d-flex justify-content-center">
+          <ul className="nav d-flex justify-content-center align-items-center">
             <li className="nav-item">
               <Link href="/">
-                <a className="nav-link link active">Home</a>
+                <a className="nav-link my-nav-link active">Home</a>
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link link" href="/services">
+              <a className="nav-link my-nav-link" href="/services">
                 Services
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link link" href="/locations">
+              <a className="nav-link my-nav-link" href="/locations">
                 Locations
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link link" href="/about">
+              <a className="nav-link my-nav-link" href="/about">
                 About Us
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link link" href="/contact">
+              <a className="nav-link my-nav-link" href="/contact">
                 Contact Us
               </a>
             </li>
