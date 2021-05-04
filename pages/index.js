@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <Layout>
       <Row className="section-wrapper" id="landing-page">
-        <Col className="ml-4 pl-4 mr-4 pr-4 d-flex align-items-center">
-          <div className="landing-page-col-1 pl-4 ml-4">
+        <Col className="pl-4 pr-4 d-flex align-items-center">
+          <div className="landing-page-col-1 pl-4 ml-4 pr-4">
             <h1 id="main-landing-page-text">
               <b>Welcome to expeditemovers</b>
             </h1>
