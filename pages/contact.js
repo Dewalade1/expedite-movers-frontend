@@ -59,7 +59,7 @@ export default function Contact () {
               </Button>
             </form>
           </Col>
-          <Col>
+          <Col className="d-flex align-items-center">
             <img src="https://res.cloudinary.com/hellodewa/image/upload/v1619468681/expeditemovers/images/sys/contact-us-side-image_ql8vme.jpg" alt="man calling on a phone" width="100%" />
           </Col>
         </Row>
