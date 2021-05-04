@@ -11,11 +11,11 @@ export default function Contact () {
     return (
       <Layout>
         <Row>
-          <Col className="pt-4 align-items-center">
-            <form className="mt-4 pt-4" id="contact-form">
-              <h3 className="mt-4 pt-2 mb-4 primary-title">
+          <Col className="pt-4 d-flex align-items-center justify-content-center">
+            <form className="" id="contact-form">
+              <h2 className="pb-4 primary-title">
                 <b>Contact Us</b>
-              </h3>
+              </h2>
               <div className="mb-4">
                 <TextField
                   id="name-textfield"

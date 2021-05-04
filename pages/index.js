@@ -4,7 +4,12 @@ import { Row, Col } from "react-bootstrap";
 
 import Layout from '../layout/layout';
 
+import Card from "@material-ui/core/Card";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+
 export default function Home() {
+
   return (
     <Layout>
       <Row className="section-wrapper" id="landing-page">
@@ -20,7 +25,9 @@ export default function Home() {
           <img src="https://res.cloudinary.com/hellodewa/image/upload/v1619884004/expeditemovers/images/sys/landing-page-img_brmhyv.png" />
         </Col>
       </Row>
-      <Row className="section-wrapper"></Row>
+      <Row className="section-wrapper">
+        <h2>Our Services</h2>
+      </Row>
     </Layout>
   );
 }

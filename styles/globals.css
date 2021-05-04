@@ -17,15 +17,21 @@ a {
 }
 
 .section-wrapper {
-  height: 662px;
+  background-color: #d7dcef;
+  height: 760px;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
 }
 
 /* HEADER */
 
 #header {
-  background-color: #ffffff;
-  position: relative;
+  position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 
 /* HOME PAGE */
@@ -54,7 +60,7 @@ a {
 }
 
 .link:hover {
-  color: #005881;
+  color: #ffffff;
 }
 
 /* CONTACT PAGE*/
