@@ -4,9 +4,13 @@ import Link from 'next/link';
 
 import { Row, Col } from "react-bootstrap";
 
-export default function Header() {
+let _ = require("lodash");
+
+export default function Header({onHomePage}) {
 
   const [colorChange, setColorChange] = useState(false);
+
+  const navLinks = ['Home', 'Services', 'Locations', 'About Us', 'Contact Us'];
 
   useEffect(function mount() {
   const changeNavbarColor = () => {
@@ -25,38 +29,25 @@ export default function Header() {
 
     return (
       <Row className={colorChange ? "navbar color-change pt-3 pb-3 pl-4" : "navbar pt-3 pb-3 pl-4"} id="header">
-        <Col className="pl-4">
+        <Col className={onHomePage ? "pl-4 home-nav-color-change": "pl-4"}>
           <div className="ml-4">
             <img src="https://res.cloudinary.com/hellodewa/image/upload/v1616559517/Moviecritics/images/logos/moviecritics-logo-transparent-background_sjnfhk.png" width={180} height={50} alt="sitelogo" />
           </div>
         </Col>
         <Col>
           <ul className="nav d-flex justify-content-center align-items-center">
-            <li className="nav-item">
-              <Link href="/">
-                <a className="nav-link my-nav-link active">Home</a>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link my-nav-link" href="/services">
-                Services
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link my-nav-link" href="/locations">
-                Locations
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link my-nav-link" href="/about">
-                About Us
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link my-nav-link" href="/contact">
-                Contact Us
-              </a>
-            </li>
+            {navLinks.map((link) => {
+              let kebabLink = _.kebabCase(link);
+              let lowerCaseLink = _.toLower(kebabLink);
+
+              return (
+                <li className="nav-item" key={link}>
+                  <Link href={lowerCaseLink == "home" ? "/" : `/${lowerCaseLink}`}>
+                    <a className={/*onHomePage && colorChange  ? "nav-link home-nav-link-color-change" :*/ onHomePage ? "nav-link home-nav-link" : "nav-link my-nav-link"}>{link}</a>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </Col>
       </Row>
