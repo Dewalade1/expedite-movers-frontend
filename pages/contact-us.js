@@ -10,7 +10,7 @@ import TextField from "@material-ui/core/TextField";
 export default function Contact () {
     return (
       <Layout>
-        <Row>
+        <Row id="contacts-layout">
           <Col className="pt-4 d-flex align-items-center justify-content-center">
             <form className="" id="contact-form">
               <h2 className="pb-4 primary-title">

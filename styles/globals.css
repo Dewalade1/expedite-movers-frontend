@@ -151,6 +151,10 @@ a {
 }
 
 /* CONTACT PAGE*/
+#contact-layout{
+  background-color: #ffffff;
+}
+
 #contact-form {
   margin: auto;
   padding: 5%;
