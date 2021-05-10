@@ -11,7 +11,7 @@ import CardContent from "@material-ui/core/CardContent";
 export default function Home() {
 
   return (
-    <Layout>
+    <Layout onHomePage>
       <Row className="section-wrapper" id="landing-page">
         <Col className="pl-4 pr-4 d-flex align-items-center justify-content-center">
           <div className="landing-page-col-1 pl-4 ml-4 pr-4">

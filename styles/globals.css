@@ -21,6 +21,17 @@ a {
   height: 760px;
 }
 
+/* TITLES */
+.main-title {
+  color: gray;
+  display: block;
+}
+
+.secondary-title {
+  color: gray;
+  display: block;
+}
+
 /* HEADER */
 
 #header {
@@ -145,6 +156,13 @@ a {
   padding: 5%;
   text-align: center;
   width: 70%;
+}
+
+/* LOCATIONS PAGE */
+#location-header {
+  background-image: url('C:\Users\DEWA\Documents\ellopod\expeditemovers\expedite-movers-frontend\images\42600.jpg');
+  background-color: #0d86be;
+  height: 370px;
 }
 
 /* FOOTER */
