@@ -13,9 +13,10 @@ export default function Contact () {
         <Row id="contacts-layout">
           <Col className="pt-4 d-flex align-items-center justify-content-center">
             <form className="" id="contact-form">
-              <h2 className="pb-4 primary-title">
-                <b>Contact Us</b>
+              <h2 className="primary-title">
+                <b>Let's talk</b>
               </h2>
+              <h5 className="pb-4 ">Wanna have a chat?</h5>
               <div className="mb-4">
                 <TextField
                   id="name-textfield"

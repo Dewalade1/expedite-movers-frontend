@@ -42,7 +42,7 @@ a {
 }
 
 #header.color-change {
-  background-color: #757781;
+  background-color: #acafbe;
   transition: background-color 200ms linear;
   width: 101%;
 }
@@ -72,66 +72,12 @@ a {
 /* LINKS */
 
 .my-nav-link {
-  color: #ffffff;
+  color: #3C4463;
   position: relative;
   text-decoration: none;
 }
 
 .my-nav-link::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #ffffff;
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.my-nav-link:hover {
-  color: #ffffff;
-}
-
-.my-nav-link:hover::before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-
-.home-nav-link {
-  color: #D7DCEF;
-  position: relative;
-  text-decoration: none;
-}
-
-.home-nav-link::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #CCD1E3;
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.home-nav-link:hover {
-  color: #CCD1E3;
-}
-
-.home-nav-link:hover::before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-
-.home-nav-link-color-change {
-  color: #3C4463;
-}
-
-.home-nav-link-color-change::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -144,11 +90,39 @@ a {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.home-nav-link-color-change:hover {
-  color: #3C4463;
+.my-nav-link:hover {
+  color: #005881;
 }
 
-.home-nav-link-color-change:hover::before {
+.my-nav-link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.home-nav-link {
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+}
+
+.home-nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e1e4ee;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.home-nav-link:hover {
+  color: #e1e4ee;
+}
+
+.home-nav-link:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }

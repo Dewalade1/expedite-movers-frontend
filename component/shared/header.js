@@ -29,7 +29,7 @@ export default function Header({onHomePage}) {
 
     return (
       <Row className={colorChange ? "navbar color-change pt-3 pb-3 pl-4" : "navbar pt-3 pb-3 pl-4"} id="header">
-        <Col className={onHomePage ? "pl-4 home-nav-color-change": "pl-4"}>
+        <Col className={onHomePage ? "pl-4 home-nav-link" : "pl-4"}>
           <div className="ml-4">
             <img src="https://res.cloudinary.com/hellodewa/image/upload/v1616559517/Moviecritics/images/logos/moviecritics-logo-transparent-background_sjnfhk.png" width={180} height={50} alt="sitelogo" />
           </div>
