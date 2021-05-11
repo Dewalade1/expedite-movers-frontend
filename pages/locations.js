@@ -2,9 +2,12 @@ import React from 'react';
 
 import { Row, Col } from "react-bootstrap";
 
+import Link from 'next/Link';
+
 import Layout from '../layout/layout';
 
 import Card from "@material-ui/core/Card";
+import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 
 import PhoneIcon from "@material-ui/icons/Phone";
@@ -27,29 +30,57 @@ export default function Locations () {
         <Row className="section-wrapper location-section">
           <Col className="d-flex justify-content-center align-items-center">
             <Card className="location-card" variant="outlined">
+              <CardContent>
+                <CardMedia allowfullscreen="true" alt="Map of our location in Lagos" component="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5678452143097!2d3.4442845147406214!3d6.449486795334054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4ef6230b7f7%3A0xe940b1a33f163690!2s15%20Ojomu%20Rd%2C%20Ikoyi%2C%20Lagos!5e0!3m2!1sen!2sng!4v1620729370516!5m2!1sen!2sng" title="Location in Abuja" width="650" height="300" className="location-map" loading="lazy" />
+              </CardContent>
+              <hr className="line-width" />
               <CardContent className="d-flex align-items-center justify-content-center">
-                <div>
-                  <h2 className="pb-4">
+                <div className="location-card-text-layout">
+                  <h2 className="pb-4 primary-title">
                     {" "}
                     <b>Lagos</b>
                   </h2>
                   <div className="pb-2">
-                    <LocationOnIcon /> 14, Ojomu Road (Formerly Ruxton), Ikoyi, Lagos, Nigeria
+                    <Link href="https://goo.gl/maps/yKLv5axFieKFhcC6A">
+                      <a className="body-link">
+                        <LocationOnIcon /> 15BB, Ojomu Road (Formerly Ruxton), Ikoyi, Lagos, Nigeria
+                      </a>
+                    </Link>
                   </div>
                   <div className="pb-2">
-                    <MailOutlineIcon /> <span href="/contact-us">info@expeditemoversng.com </span>
+                    <Link href="/contact-us">
+                      <a className="body-link">
+                        <MailOutlineIcon /> info@expeditemoversng.com
+                      </a>
+                    </Link>
                   </div>
                   <div className="pb-2">
-                    <AlternateEmailIcon /> <span href="/contact-us"> expeditemovers@gmail.com </span>
+                    <Link href="/contact-us">
+                      <a className="body-link">
+                        <AlternateEmailIcon /> expeditemovers@gmail.com
+                      </a>
+                    </Link>
                   </div>
                   <div className="pb-2">
-                    <PhoneIcon /> <span href="tel:+2348103874982"> +234 8103874982</span>
+                    <Link href="tel:+2348103874982">
+                      <a className="body-link">
+                        <PhoneIcon /> +234 8103874982
+                      </a>
+                    </Link>
                   </div>
                   <div className="pb-2">
-                    <PhoneOutlinedIcon /> <span href="tel:+2348179384101"> +234 8179384101</span>
+                    <Link href="tel:+2348179384101">
+                      <a className="body-link">
+                        <PhoneOutlinedIcon /> +234 8179384101
+                      </a>
+                    </Link>
                   </div>
                   <div className="pb-2">
-                    <PhoneOutlinedIcon /> <span href="tel:012914338"> 01-2914338</span>
+                    <Link href="tel:012914338">
+                      <a className="body-link">
+                        <PhoneOutlinedIcon /> 01-2914338
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </CardContent>
@@ -57,28 +88,56 @@ export default function Locations () {
           </Col>
           <Col className="d-flex justify-content-center align-items-center">
             <Card className="location-card" variant="outlined">
+              <CardContent>
+                <CardMedia component="iframe" alt="Map of our location in Abuja" title="Location in Abuja" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.8934100361953!2d7.440046214757513!3d9.07347449349005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0ad43bcc84fd%3A0x3520b427f27b6040!2s29%20Anthony%20Enahoro%20St%2C%20Mabushi%2C%20Abuja!5e0!3m2!1sen!2sng!4v1620727881038!5m2!1sen!2sng" width="650" height="300" className="location-map" allowfullscreen="true" loading="lazy" />
+              </CardContent>
+              <hr className="line-width" />
               <CardContent className="d-flex align-items-center justify-content-center">
-                <div>
-                  <h2>
+                <div className="location-card-text-layout">
+                  <h2 className="pb-4 primary-title">
                     <b>Abuja</b>
                   </h2>
                   <div className="pb-2">
-                    <LocationOnIcon /> 29, Anthony Enahoro Street, Utako, Abuja, Nigeria
+                    <Link href="https://goo.gl/maps/EhP4cgRquqGw1gMo9">
+                      <a className="body-link">
+                        <LocationOnIcon /> 29, Anthony Enahoro Street, Utako, Abuja, Nigeria
+                      </a>
+                    </Link>
                   </div>
                   <div className="pb-2">
-                    <MailOutlineIcon /> <span href="/contact-us">info@expeditemoversng.com </span>
+                    <Link href="/contact-us">
+                      <a className="body-link">
+                        <MailOutlineIcon /> info@expeditemoversng.com
+                      </a>
+                    </Link>
                   </div>
                   <div className="pb-2">
-                    <AlternateEmailIcon /> <span href="/contact-us"> expeditemovers@gmail.com </span>
+                    <Link href="/contact-us">
+                      <a className="body-link">
+                        <AlternateEmailIcon /> expeditemovers@gmail.com
+                      </a>
+                    </Link>
                   </div>
                   <div className="pb-2">
-                    <PhoneIcon /> <span href="tel:+2348103874982"> +234 8103874982</span>
+                    <Link href="tel:+2348103874982">
+                      <a className="body-link">
+                        <PhoneIcon /> +234 8103874982
+                      </a>
+                    </Link>
                   </div>
                   <div className="pb-2">
-                    <PhoneOutlinedIcon /> <span href="tel:+2348179384101"> +234 8179384101</span>
+                    <Link href="tel:+2348179384101">
+                      <a className="body-link">
+                        <PhoneOutlinedIcon /> +234 8179384101
+                      </a>
+                    </Link>
                   </div>
                   <div className="pb-2">
-                    <PhoneOutlinedIcon /> <span href="tel:012914338"> 01-2914338</span>
+                    <Link href="tel:012914338">
+                      <a className="body-link">
+                        <PhoneOutlinedIcon /> 01-2914338
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </CardContent>

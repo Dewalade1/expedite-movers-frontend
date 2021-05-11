@@ -21,14 +21,18 @@ a {
   height: 760px;
 }
 
+.line-width {
+  max-width: 90%;
+}
+
 /* TITLES */
 .main-title {
-  color: #403f3f;
+  color: rgb(180, 43, 43);
   display: block;
 }
 
 .secondary-title {
-  color: #403f3f;
+  color: rgb(180, 43, 43);
   display: block;
 }
 
@@ -54,6 +58,16 @@ a {
 }
 
 /* LINKS */
+
+.body-link {
+  color: #000000d3;
+  text-decoration: none;
+}
+
+.body-link:hover {
+  color: #000000;
+  text-decoration: none;
+}
 
 .my-nav-link {
   color: #3C4463;
@@ -153,9 +167,17 @@ a {
 }
 
 .location-card {
-  min-width: 70%;
-  max-width: 71%;
-  min-height: 60%;
+  min-width: 80%;
+  max-width: 81%;
+  min-height: 65%;
+}
+
+.location-map {
+  border: 0;
+}
+
+.location-card-text-layout {
+  min-width: 90%;
 }
 
 /* FOOTER */
