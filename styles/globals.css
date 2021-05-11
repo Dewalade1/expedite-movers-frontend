@@ -25,7 +25,9 @@ a {
   max-width: 90%;
 }
 
+
 /* TITLES */
+
 .main-title {
   color: rgb(180, 43, 43);
   display: block;
@@ -35,6 +37,7 @@ a {
   color: rgb(180, 43, 43);
   display: block;
 }
+
 
 /* HEADER */
 
@@ -51,11 +54,13 @@ a {
   width: 101%;
 }
 
+
 /* TEXTS */
 
 .primary-title {
   color:#005881;
 }
+
 
 /* LINKS */
 
@@ -125,7 +130,9 @@ a {
   transform: scaleX(1);
 }
 
+
 /* HOME PAGE */
+
 #landing-page {
   background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1619879139/expeditemovers/images/sys/landing-page-background_qul3zi.jpg');
   background-attachment: fixed;
@@ -142,19 +149,21 @@ a {
 }
 
 
-/* CONTACT PAGE*/
-#contact-layout{
-  background-color: #ffffff;
-}
+/* SERVICES */
 
-#contact-form {
-  margin: auto;
-  padding: 5%;
-  text-align: center;
-  width: 70%;
+#services-header {
+  background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1620732654/expeditemovers/images/sys/services-title-background_zh6ckz.jpg");
+  background-color: #0d86be;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  height: 370px;
+  opacity: 95%;
 }
 
 /* LOCATIONS PAGE */
+
 #location-header {
   background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1620723007/expeditemovers/images/sys/locations-title-background_larger_epajc4.jpg");
   background-color: #0d86be;
@@ -180,7 +189,23 @@ a {
   min-width: 90%;
 }
 
+
+/* CONTACT PAGE*/
+
+#contact-layout{
+  background-color: #ffffff;
+}
+
+#contact-form {
+  margin: auto;
+  padding: 5%;
+  text-align: center;
+  width: 70%;
+}
+
+
 /* FOOTER */
+
 #footer {
   background: #4f4e4e;
   color: #ffffff;
