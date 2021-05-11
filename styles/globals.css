@@ -23,12 +23,12 @@ a {
 
 /* TITLES */
 .main-title {
-  color: gray;
+  color: #403f3f;
   display: block;
 }
 
 .secondary-title {
-  color: gray;
+  color: #403f3f;
   display: block;
 }
 
@@ -50,6 +50,9 @@ a {
 /* HOME PAGE */
 #landing-page {
   background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1619879139/expeditemovers/images/sys/landing-page-background_qul3zi.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 #main-landing-page-text {
@@ -164,9 +167,18 @@ a {
 
 /* LOCATIONS PAGE */
 #location-header {
-  background-image: url('C:\Users\DEWA\Documents\ellopod\expeditemovers\expedite-movers-frontend\images\42600.jpg');
+  background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1620723007/expeditemovers/images/sys/locations-title-background_larger_epajc4.jpg");
   background-color: #0d86be;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   height: 370px;
+}
+
+.location-card {
+  min-width: 69%;
+  max-width: 70%;
 }
 
 /* FOOTER */

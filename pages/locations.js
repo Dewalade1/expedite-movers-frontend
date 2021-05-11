@@ -7,6 +7,10 @@ import Layout from '../layout/layout';
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 
+import PhoneIcon from "@material-ui/icons/Phone";
+import LocationOnIcon from "@material-ui/icons/LocationOn";
+import MailOutlineIcon from "@material-ui/icons/MailOutline";
+
 export default function Locations () {
     return (
       <Layout>
@@ -20,24 +24,34 @@ export default function Locations () {
             <h5>Find us at our nearest locations</h5>
           </Row>
         </header>
-        <div className="section-wrapper">
-          <Row className="mt-4 pt-4">
-            <Col>
-              <Card variant="outlined">
-                <CardContent>
-                  <h4>Abuja</h4>
-                </CardContent>
-              </Card>
-            </Col>
-            <Col>
-              <Card variant="outlined">
-                <CardContent>
-                  <h4>Lagos</h4>
-                </CardContent>
-              </Card>
-            </Col>
-          </Row>
-        </div>
+        <Row className="section-wrapper">
+          <Col className="d-flex justify-content-center align-items-center">
+            <Card className="location-card" variant="outlined">
+              <CardContent>
+                <h3>Lagos</h3>
+                <div>
+                  <LocationOnIcon /> 14, Ojomu Road (Formerly Ruxton), Ikoyi, Lagos, Nigeria
+                </div>
+                <div>
+                  <MailOutlineIcon />
+                </div>
+                <div>
+                  <PhoneIcon /> <span href="tel:+2348103874982">+234 8103874982</span>
+                </div>
+                <div>
+                  <PhoneIcon /> <span href="tel:+2348179384101">+234 8179384101</span>
+                </div>
+              </CardContent>
+            </Card>
+          </Col>
+          <Col className="d-flex justify-content-center align-items-center">
+            <Card className="location-card" variant="outlined">
+              <CardContent>
+                <h3>Abuja</h3>
+              </CardContent>
+            </Card>
+          </Col>
+        </Row>
       </Layout>
     );
 };
