@@ -130,6 +130,12 @@ a {
   transform: scaleX(1);
 }
 
+/* CLIENT SECTION */
+
+#client-section {
+  min-height: 300px;
+}
+
 
 /* HOME PAGE */
 

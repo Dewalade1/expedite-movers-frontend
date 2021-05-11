@@ -1,8 +1,9 @@
 import React from 'react';
 
 import Layout from '../layout/layout';
+import HomeContent from "../component/contents/homeContent";
+import ClientContent from "../component/contents/clientContent";
 import ServicesContent from "../component/contents/servicesContent";
-import HomeContent from '../component/contents/homeContent';
 
 export default function Home() {
 
@@ -10,6 +11,7 @@ export default function Home() {
     <Layout onHomePage>
       <HomeContent/>
       <ServicesContent/>
+      <ClientContent/>
     </Layout>
   );
 }

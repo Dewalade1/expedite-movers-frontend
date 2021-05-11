@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Layout from '../layout/layout';
+import ClientContent from "../component/contents/clientContent";
 import ServicesContent from '../component/contents/servicesContent';
 
 export default function Services () {
@@ -16,6 +17,7 @@ export default function Services () {
           </div>
         </header>
         <ServicesContent/>
+        <ClientContent/>
       </Layout>
     );
 };
