@@ -29,12 +29,12 @@ a {
 /* TITLES */
 
 .main-title {
-  color: rgb(180, 43, 43);
+  color: #023349;
   display: block;
 }
 
 .secondary-title {
-  color: rgb(180, 43, 43);
+  color: #023349;
   display: block;
 }
 
@@ -75,7 +75,7 @@ a {
 }
 
 .my-nav-link {
-  color: #3C4463;
+  color: #023349;
   position: relative;
   text-decoration: none;
 }
@@ -87,14 +87,14 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #005881;
+  background-color: #02283a;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
 
 .my-nav-link:hover {
-  color: #005881;
+  color: #02283a;
 }
 
 .my-nav-link:hover::before {
@@ -160,6 +160,10 @@ a {
   background-size: cover;
   height: 370px;
   opacity: 95%;
+}
+
+.services-title {
+  color:#023349
 }
 
 /* LOCATIONS PAGE */
