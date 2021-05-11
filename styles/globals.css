@@ -17,7 +17,7 @@ a {
 }
 
 .section-wrapper {
-  background-color: #D7DCEF;
+  background-color: #f4f6fa;
   height: 760px;
 }
 
@@ -45,22 +45,6 @@ a {
   background-color: #acafbe;
   transition: background-color 200ms linear;
   width: 101%;
-}
-
-/* HOME PAGE */
-#landing-page {
-  background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1619879139/expeditemovers/images/sys/landing-page-background_qul3zi.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-
-#main-landing-page-text {
-  color: #ffffff;
-}
-
-.landing-page-text {
-   color: #d7dcef;
 }
 
 /* TEXTS */
@@ -127,6 +111,23 @@ a {
   transform: scaleX(1);
 }
 
+/* HOME PAGE */
+#landing-page {
+  background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1619879139/expeditemovers/images/sys/landing-page-background_qul3zi.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#main-landing-page-text {
+  color: #ffffff;
+}
+
+.landing-page-text {
+   color: #d7dcef;
+}
+
+
 /* CONTACT PAGE*/
 #contact-layout{
   background-color: #ffffff;
@@ -148,11 +149,13 @@ a {
   background-position: center;
   background-size: cover;
   height: 370px;
+  opacity: 95%;
 }
 
 .location-card {
-  min-width: 69%;
-  max-width: 70%;
+  min-width: 70%;
+  max-width: 71%;
+  min-height: 60%;
 }
 
 /* FOOTER */
