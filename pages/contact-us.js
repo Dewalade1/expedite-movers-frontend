@@ -16,7 +16,7 @@ export default function Contact () {
               <h2 className="primary-title">
                 <b>Let's talk</b>
               </h2>
-              <h5 className="pb-4 ">Wanna have a chat?</h5>
+              <h5 className="pb-4 secondary-title">Wanna have a chat?</h5>
               <div className="mb-4">
                 <TextField
                   id="name-textfield"

@@ -17,7 +17,7 @@ a {
 }
 
 .section-wrapper {
-  background-color: #f4f6fa;
+  background-color: #ffffff;
   height: 760px;
 }
 
@@ -133,7 +133,7 @@ a {
 /* CLIENT SECTION */
 
 #client-section {
-  min-height: 300px;
+  min-height: 340px;
 }
 
 
