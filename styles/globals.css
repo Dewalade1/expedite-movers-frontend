@@ -158,11 +158,11 @@ a {
 /* SERVICES */
 
 #services-header {
-  background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1620732654/expeditemovers/images/sys/services-title-background_zh6ckz.jpg");
-  background-color: #0d86be;
-  background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: #0d86be;
+  background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1620732654/expeditemovers/images/sys/services-title-background_zh6ckz.jpg");
   background-position: bottom;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 370px;
   opacity: 95%;
@@ -170,6 +170,17 @@ a {
 
 .services-title {
   color:#023349
+}
+
+.freight-section {
+  background-attachment: fixed;
+  background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1620740617/expeditemovers/images/sys/freight-background-img_zebis1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.freight-text {
+  color: #ffffff;
 }
 
 /* LOCATIONS PAGE */

@@ -13,9 +13,9 @@ export default function ServicesContent () {
             </h2>
           </Col>
         </Row>
-        <Row className="section-wrapper">
+        <Row className="section-wrapper freight-section">
           <Col className="d-flex justify-content-center align-items-center">
-            <h2 className="primary-title">
+            <h2 className="freight-text">
               <b>Freight</b>
             </h2>
             Air, sea and Land
