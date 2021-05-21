@@ -44,7 +44,7 @@ a {
   background-color: transparent;
   position: fixed;
   width: 101%;
-  z-index: 10;
+  z-index: 20;
 }
 
 #header.color-change {
@@ -156,6 +156,12 @@ a {
 
 /* SERVICES */
 
+.info-container{
+  margin-bottom: 20%;
+  padding: 10%;
+  width: 90%;
+}
+
 #services-header {
   background-attachment: fixed;
   background-color: #0d86be;
@@ -171,11 +177,42 @@ a {
   color:#023349
 }
 
+.service-title {
+  border-left: 5px solid #005881;
+  padding-left: 3%;
+}
+
 .service-img {
   border: 1px solid;
-  border-radius: 2em;
-  height: 70%;
+  border-radius: 0em;
+  height: 60%;
   width: 90%;
+}
+
+.service-info-left {
+  border-radius: 0.5em;
+  background-color:#403f3f;
+  font-size: xx-large;
+  height: calc(30% + 80px);
+  margin-top: 3%;
+  padding: 5%;
+  position: absolute;
+  width: calc(100% + 200px);
+  z-index: 10;
+}
+
+.service-info-right {
+  align-self: left;
+  border-radius: 0.5em;
+  background-color:#403f3f;
+  font-size: xx-large;
+  height: calc(15% + 80px);
+  margin-top: 3%;
+  margin-right: 30%;
+  padding: 5%;
+  position: absolute;
+  width: calc(100% + 200px);
+  z-index: 10;
 }
 
 .freight-section {
@@ -186,7 +223,7 @@ a {
 }
 
 .black-bg-layout {
-  background-color: #403f3f;
+  background-color: #272626;
   color: #ffffff;
 }
 
