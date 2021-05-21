@@ -162,7 +162,7 @@ export default function Footer () {
             <Link href="#">
               <a className="footer-link"> helloDewa </a>
             </Link>
-            | Made in Lagos, Nigeria
+            |<a href="https://www.freepik.com/vectors/character">Character vector created by vectorjuice - www.freepik.com</a> | Made in Lagos, Nigeria
           </h6>
         </Row>
       </footer>

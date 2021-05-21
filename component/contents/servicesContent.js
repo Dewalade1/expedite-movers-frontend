@@ -27,10 +27,14 @@ export default function ServicesContent () {
               <div className="service-info-left">We provide you with quality and on-time distrobution</div>
             </div>
           </Col>
-          <Col></Col>
+          <Col className="d-flex justify-content-end align-items-center">
+            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1621638438/expeditemovers/images/sys/air-land-and-sea-freight-img_hbybta.jpg" className="service-img" />
+          </Col>
         </Row>
         <Row className="section-wrapper black-bg-layout">
-          <Col className="d-flex justify-content-start align-items-center"></Col>
+          <Col className="d-flex justify-content-start align-items-center">
+            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1621639615/expeditemovers/images/sys/distribution-img_jxc3dd.jpg" className="service-img" />
+          </Col>
           <Col className="d-flex justify-content-center align-items-center">
             <div className="info-container">
               <h1 className="service-title-right title-adjust-1">
@@ -49,7 +53,9 @@ export default function ServicesContent () {
               <div className="service-info-left">We provide you with quality and on-time distrobution</div>
             </div>
           </Col>
-          <Col></Col>
+          <Col className="d-flex justify-content-end align-items-center">
+            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1621639727/expeditemovers/images/sys/customs-clearance-img_leldhv.jpg" className="service-img" />
+          </Col>
         </Row>
         <Row className="section-wrapper black-bg-layout">
           <Col className="d-flex justify-content-start align-items-center">

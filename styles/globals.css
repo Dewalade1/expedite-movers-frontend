@@ -18,7 +18,7 @@ a {
 
 .section-wrapper {
   background-color: #ffffff;
-  height: 670px;
+  height: 720px;
 }
 
 .line-width {
@@ -208,7 +208,7 @@ a {
 .service-img {
   border: 1px solid;
   border-radius: 0em;
-  height: 60%;
+  height: 67%;
   width: 90%;
 }
 
@@ -216,7 +216,7 @@ a {
   border-radius: 0.5em;
   background-color:#403f3f;
   font-size: xx-large;
-  min-height: calc(30% + 80px);
+  min-height: calc(35% + 80px);
   margin-top: 3%;
   padding: 5%;
   position: absolute;
