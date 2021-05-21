@@ -18,7 +18,7 @@ a {
 
 .section-wrapper {
   background-color: #ffffff;
-  height: 720px;
+  height: 670px;
 }
 
 .line-width {
@@ -139,7 +139,7 @@ a {
 /* HOME PAGE */
 
 #landing-page {
-  background-color: #ffffff;
+  background-color: #00000;
   background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1619879139/expeditemovers/images/sys/landing-page-background_qul3zi.jpg');
   background-attachment: fixed;
   background-position: center;
@@ -153,6 +153,12 @@ a {
 
 .landing-page-text {
    color: #d7dcef;
+}
+
+.our-services {
+  background-color: #272626;
+  color: #ffffffff;
+  padding-top: 40px;
 }
 
 

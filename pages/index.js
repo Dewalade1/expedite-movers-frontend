@@ -9,9 +9,12 @@ export default function Home() {
 
   return (
     <Layout onHomePage>
-      <HomeContent/>
-      <ServicesContent/>
-      <ClientContent/>
+      <HomeContent />
+      <div className="our-services">
+        <h1 className="text-center"> Our Services </h1>
+        <ServicesContent />
+      </div>
+      <ClientContent />
     </Layout>
   );
 }
