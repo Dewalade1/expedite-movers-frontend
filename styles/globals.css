@@ -18,7 +18,7 @@ a {
 
 .section-wrapper {
   background-color: #ffffff;
-  height: 760px;
+  height: 720px;
 }
 
 .line-width {
@@ -48,7 +48,7 @@ a {
 }
 
 #header.color-change {
-  background-color: #acafbe;
+  background-color: #e9ebf3;
   transition: background-color 200ms linear;
   width: 101%;
 }
@@ -102,7 +102,7 @@ a {
 }
 
 .home-nav-link {
-  color: #ffffff;
+  color: #1d1c1c;
   position: relative;
   text-decoration: none;
 }
@@ -114,14 +114,14 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #e1e4ee;
+  background-color: #1d1c1c;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
 
 .home-nav-link:hover {
-  color: #e1e4ee;
+  color: #1d1c1c;
 }
 
 .home-nav-link:hover::before {
@@ -139,10 +139,12 @@ a {
 /* HOME PAGE */
 
 #landing-page {
+  background-color: #ffffff;
   background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1619879139/expeditemovers/images/sys/landing-page-background_qul3zi.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  height: 820px;
 }
 
 #main-landing-page-text {
@@ -177,9 +179,24 @@ a {
   color:#023349
 }
 
-.service-title {
+.service-title-left {
   border-left: 5px solid #005881;
   padding-left: 3%;
+}
+
+.service-title-right {
+  border-left: 5px solid #005881;
+  padding-left: 3%;
+}
+
+.title-adjust-1 {
+  position: relative;
+  right: 4%;
+}
+
+.title-adjust-2 {
+  position: relative;
+  left: 32%;
 }
 
 .service-img {
@@ -193,7 +210,7 @@ a {
   border-radius: 0.5em;
   background-color:#403f3f;
   font-size: xx-large;
-  height: calc(30% + 80px);
+  min-height: calc(30% + 80px);
   margin-top: 3%;
   padding: 5%;
   position: absolute;
@@ -205,12 +222,14 @@ a {
   align-self: left;
   border-radius: 0.5em;
   background-color:#403f3f;
+  display: block;
   font-size: xx-large;
-  height: calc(15% + 80px);
+  min-height: calc(35% + 80px);
   margin-top: 3%;
   margin-right: 30%;
   padding: 5%;
   position: absolute;
+  right: 0.5%;
   width: calc(100% + 200px);
   z-index: 10;
 }

@@ -4,7 +4,7 @@ import { Row, Col } from "react-bootstrap";
 
 export default function HomeContent () {
     return (
-      <Row className="section-wrapper" id="landing-page">
+      <Row className="home-section-wrapper" id="landing-page">
         <Col className="pl-4 pr-4 d-flex align-items-center justify-content-center">
           <div className="landing-page-col-1 pl-4 ml-4 pr-4 mr-4">
             <h1 className="pl-4" id="main-landing-page-text">

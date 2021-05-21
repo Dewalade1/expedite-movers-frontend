@@ -11,7 +11,7 @@ export default function ServicesContent () {
           </Col>
           <Col className="d-flex justify-content-start align-items-center">
             <div className="info-container">
-              <h1 className="service-title">
+              <h1 className="service-title-right">
                 <b>Distribution and Haulage</b>
               </h1>
               <div className="service-info-right">We provide you with quality and on-time distrobution</div>
@@ -21,7 +21,7 @@ export default function ServicesContent () {
         <Row className="section-wrapper black-bg-layout">
           <Col className="d-flex justify-content-center align-items-center">
             <div className="info-container">
-              <h1 className="service-title">
+              <h1 className="service-title-left">
                 <b>Air, Sea and Land Freight</b>
               </h1>
               <div className="service-info-left">We provide you with quality and on-time distrobution</div>
@@ -33,7 +33,7 @@ export default function ServicesContent () {
           <Col className="d-flex justify-content-start align-items-center"></Col>
           <Col className="d-flex justify-content-center align-items-center">
             <div className="info-container">
-              <h1 className="service-title">
+              <h1 className="service-title-right title-adjust-1">
                 <b>Cold Chain Distributions</b>
               </h1>
               <div className="service-info-right">We provide you with quality and on-time distrobution</div>
@@ -43,7 +43,7 @@ export default function ServicesContent () {
         <Row className="section-wrapper black-bg-layout">
           <Col className="d-flex justify-content-center align-items-center">
             <div className="info-container">
-              <h1 className="service-title">
+              <h1 className="service-title-left">
                 <b>Customs Clearance and Delivery</b>
               </h1>
               <div className="service-info-left">We provide you with quality and on-time distrobution</div>
@@ -57,7 +57,7 @@ export default function ServicesContent () {
           </Col>
           <Col className="d-flex justify-content-center align-items-center">
             <div className="info-container">
-              <h1 className="service-title">
+              <h1 className="service-title-right title-adjust-2">
                 <b>Warehousing</b>
               </h1>
               <div className="service-info-right">We provide you with quality and on-time distrobution</div>
@@ -67,7 +67,7 @@ export default function ServicesContent () {
         <Row className="section-wrapper black-bg-layout">
           <Col className="d-flex justify-content-center align-items-center">
             <div className="info-container">
-              <h1 className="service-title">
+              <h1 className="service-title-left">
                 <b>Packing and Removal/Relocation</b>
               </h1>
               <div className="service-info-left">We provide you with quality and on-time distrobution</div>
