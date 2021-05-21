@@ -25,7 +25,6 @@ a {
   max-width: 90%;
 }
 
-
 /* TITLES */
 
 .main-title {
@@ -172,11 +171,33 @@ a {
   color:#023349
 }
 
+.service-img {
+  border: 1px solid;
+  border-radius: 2em;
+  height: 70%;
+  width: 90%;
+}
+
 .freight-section {
   background-attachment: fixed;
   background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1620740617/expeditemovers/images/sys/freight-background-img_zebis1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.black-bg-layout {
+  background-color: #403f3f;
+  color: #ffffff;
+}
+
+.white-bg-layout {
+  background-color: #e1e4ee;
+  color: #005881;
+}
+
+.blue-bg-layout {
+  background-color: #005881;
+  color: #e1e4ee;
 }
 
 .freight-text {
