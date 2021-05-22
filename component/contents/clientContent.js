@@ -6,14 +6,9 @@ import { Row, Col } from 'react-bootstrap';
 export default function ClientContent () {
     
     return (
-      <div className="d-flex justify-content-center text-center" id="client-section">
+      <div className="d-flex justify-content-center align-items-center" id="client-section">
         <Row>
-          <h2 className="main-title pt-4 mt-2">
-            <b>Our Clientelle</b>
-          </h2>
-        </Row>
-        <Row>
-          <img src="" alt="" />
+          <img src="https://res.cloudinary.com/hellodewa/image/upload/v1621641313/expeditemovers/images/logos/usaid-logo-greyscale_bhx281.png" alt="USAID" className="client-logo" />
           <img src="" alt="" />
           <img src="" alt="" />
           <img src="" alt="" />

@@ -132,7 +132,13 @@ a {
 /* CLIENT SECTION */
 
 #client-section {
-  min-height: 340px;
+  background-color:#272626;
+  min-height: 250px;
+}
+
+.client-logo {
+  height: 90%;
+  width: 350px;
 }
 
 
@@ -208,15 +214,15 @@ a {
 .service-img {
   border: 1px solid;
   border-radius: 0em;
-  height: 67%;
-  width: 90%;
+  height: 70%;
+  width: 87%;
 }
 
 .service-info-left {
   border-radius: 0.5em;
   background-color:#403f3f;
   font-size: xx-large;
-  min-height: calc(35% + 80px);
+  min-height: calc(35% + 90px);
   margin-top: 3%;
   padding: 5%;
   position: absolute;
@@ -230,7 +236,7 @@ a {
   background-color:#403f3f;
   display: block;
   font-size: xx-large;
-  min-height: calc(35% + 80px);
+  min-height: calc(35% + 90px);
   margin-top: 3%;
   margin-right: 30%;
   padding: 5%;
