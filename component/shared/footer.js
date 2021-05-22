@@ -17,12 +17,12 @@ import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
 export default function Footer () {
     return (
       <footer id="footer">
-        <Row className="pt-4 pb-4" id="footer-top">
+        <Row className="" id="footer-top">
           <Col className="pl-4 justify-content-center" md={4}>
             <div className="ml-4 pl-4 mt-4">
               <img src="https://res.cloudinary.com/hellodewa/image/upload/v1616559517/Moviecritics/images/logos/moviecritics-logo-transparent-background_sjnfhk.png" width={180} height={50} alt="sitelogo" />
             </div>
-            <p className="mt-4 ml-4 pl-4 footer-text">Expeditemovers Ltd. is a highly dynamic logistic service provider positioned to render efficient and personalized service to her esteemed clients with 100% satisfaction guaranteed.</p>
+            <p className="mt-4 pt-2 ml-4 pl-4 footer-text">Expeditemovers Ltd. is a highly dynamic logistic service provider positioned to render efficient and personalized service to her esteemed clients with 100% satisfaction guaranteed.</p>
           </Col>
           <Col className="pl-4 justify-content-center" md={2}>
             <b>
@@ -162,7 +162,11 @@ export default function Footer () {
             <Link href="#">
               <a className="footer-link"> helloDewa </a>
             </Link>
-            |<a href="https://www.freepik.com/vectors/character">Character vector created by vectorjuice - www.freepik.com</a> | Made in Lagos, Nigeria
+            | Character vector created by{" "}
+            <a href="https://www.freepik.com/vectors/character" className="footer-link">
+              vectorjuice - www.freepik.com
+            </a>{" "}
+            | Made in Lagos, Nigeria
           </h6>
         </Row>
       </footer>

@@ -133,7 +133,7 @@ a {
 
 #client-section {
   background-color:#272626;
-  min-height: 250px;
+  min-height: 330px;
 }
 
 .client-logo {
@@ -317,23 +317,30 @@ a {
 /* FOOTER */
 
 #footer {
-  background: #4f4e4e;
+  background: #178291;
   color: #ffffff;
+  min-height: 470px;
   width: 101%;
 }
 
+#footer-bottom {
+  background: #0e6f7c;
+  color: #17a9bd;
+  padding: 1% 0;
+}
+
+#footer-top {
+  padding: 5% 0;
+}
+
 .footer-title {
-  color: #A9A9A9;
+  color: #30cde2;
 }
 
 .footer-text {
-  color: #d7dcef;
+  color: #ffffff;
 }
 
-#footer-bottom {
-  background: #403f3f;
-  color: #A9A9A9;
-}
 
 /* FOOTER LINKS */
 
@@ -348,53 +355,57 @@ a {
 }
 
 .site-map-icon {
-  color: #A9A9A9;
+  color: #178291;
   text-decoration: none;
 }
 
 .contact-icon {
-  color: #A9A9A9;
+  color: #178291;
   text-decoration: none;
 }
 
 #facebook-icon {
-  color: #A9A9A9;
+  color: #178291;
 }
 
 #twitter-icon {
-  color: #A9A9A9;
+  color: #178291;
 }
 
 #instagram-icon {
-  color: #A9A9A9;
+  color: #178291;
 }
 
 #linkdin-icon {
-  color: #A9A9A9;
+  color: #178291;
 }
 
 .footer-link:hover > .site-map-icon {
-  color: #09caff
+  color: #28abcf;
+  text-decoration: none;
 }
 
 .footer-link:hover > .contact-icon {
-  color: #30d388;
+  color: #074729;
   text-decoration: none;
 }
 
 .footer-link:hover > #facebook-icon {
-    color: #3b5998;
+    color: #374d7c;
     text-decoration: none;
 }
 
 .footer-link:hover > #twitter-icon {
-  color: #00acee;
+  color: #374d7c;
+  text-decoration: none;
 }
 
 .footer-link:hover > #instagram-icon {
-  color: #fccc63;
+  color: #374d7c;
+  text-decoration: none;
 }
 
 .footer-link:hover > #linkdin-icon {
-  color: #0072b1;
+  color: #374d7c;
+  text-decoration: none;
 }
