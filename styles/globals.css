@@ -58,8 +58,8 @@ a {
 }
 
 #header.color-change {
-  background-color: #e9ebf3;
-  transition: background-color 200ms linear;
+  background-color: #3a3737;
+  transition: background-color 250ms linear;
   width: 101%;
 }
 
@@ -67,24 +67,24 @@ a {
 /* TEXTS */
 
 .primary-title {
-  color:#005881;
+  color:#0996d8;
 }
 
 
 /* LINKS */
 
 .body-link {
-  color: #000000d3;
+  color: #afb4c4;
   text-decoration: none;
 }
 
 .body-link:hover {
-  color: #000000;
+  color: #eaebf0;
   text-decoration: none;
 }
 
 .my-nav-link {
-  color: #023349;
+  color: #437f9b;
   position: relative;
   text-decoration: none;
 }
@@ -301,6 +301,7 @@ a {
 }
 
 .location-card {
+  background-color: #363535;
   min-width: 80%;
   max-width: 81%;
   min-height: 65%;
@@ -315,6 +316,10 @@ a {
   min-width: 90%;
 }
 
+.location-section {
+  background-color: #272626;
+  min-height: 920px;
+}
 
 /* ABOUT US PAGE */
 
@@ -332,7 +337,7 @@ a {
 
 /* CONTACT PAGE*/
 
-#contact-layout{
+#contacts-layout{
   background-color: #ffffff;
 }
 
@@ -370,14 +375,14 @@ a {
 /* FOOTER */
 
 #footer {
-  background: #178291;
+  background: #0d86be;
   color: #ffffff;
   min-height: 470px;
   width: 101%;
 }
 
 #footer-bottom {
-  background: #0e6f7c;
+  background: #005881;
   color: #17a9bd;
   padding: 1% 0;
 }
@@ -408,29 +413,29 @@ a {
 }
 
 .site-map-icon {
-  color: #178291;
+  color: #0d86be;
   text-decoration: none;
 }
 
 .contact-icon {
-  color: #178291;
+  color: #0d86be;
   text-decoration: none;
 }
 
 #facebook-icon {
-  color: #178291;
+  color: #0d86be;
 }
 
 #twitter-icon {
-  color: #178291;
+  color: #0d86be;
 }
 
 #instagram-icon {
-  color: #178291;
+  color: #0d86be;
 }
 
 #linkdin-icon {
-  color: #178291;
+  color: #0d86be;
 }
 
 .footer-link:hover > .site-map-icon {

@@ -13,6 +13,7 @@ export default function Home() {
       <ClientContent />
       <div className="our-services">
         <h1 className="text-center"> Our Services </h1>
+        <div className="colored-line"></div>
         <ServicesContent />
       </div>
 
