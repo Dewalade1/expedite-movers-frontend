@@ -14,16 +14,21 @@ import Layout from '../layout/layout';
 export default function Admin () {
     return (
       <Layout>
-        <header id="admin-header">
-          <h1>Admin</h1>{" "}
+        <header className="black-bg-layout" id="admin-header">
+          <div className="admin-header-overlay">
+            <div>
+              <h1 className="admin-header-title"> Admin </h1>{" "}
+            </div>
+          </div>
         </header>
-        <Row>
+        <Row className="section-wrapper black-bg-layout">
           <Col className="admin-col-layout">
             <Card className="admin-card" variant="outlined">
-              <CardHeader title="Databases" />
+              <CardMedia component="img" alt="MySQL logo" height="300" image="https://res.cloudinary.com/hellodewa/image/upload/v1621796265/expeditemovers/images/logos/mysql_logo_mqeyvl.png" title="Database Card" />
+              <CardHeader title="Databases" className="primary-title" />
               <CardContent>
-                View and edit your Databases Here
-                <Button variant="contained" color="primary" size="medium" disableElevation fullWidth>
+                <p className="admin-card-text">View and edit your Databases Here</p>
+                <Button className="button-layout" variant="contained" color="primary" size="medium" disableElevation fullWidth>
                   {" "}
                   Go to Database{" "}
                 </Button>
@@ -32,10 +37,11 @@ export default function Admin () {
           </Col>
           <Col className="admin-col-layout">
             <Card className="admin-card" variant="outlined">
-              <CardHeader title="Email" />
+              <CardMedia component="img" alt="cPanel Logo" height="300" image="https://res.cloudinary.com/hellodewa/image/upload/v1621796270/expeditemovers/images/logos/webmail-img_xqogav.jpg" title="Email Access" />
+              <CardHeader title="Email" className="primary-title" />
               <CardContent>
-                View and edit your Databases Here
-                <Button variant="contained" color="primary" size="medium" disableElevation fullWidth>
+                <p className="admin-card-text"> View and send your Emails here </p>
+                <Button className="button-layout" variant="contained" color="primary" size="medium" disableElevation fullWidth>
                   {" "}
                   Access Email{" "}
                 </Button>

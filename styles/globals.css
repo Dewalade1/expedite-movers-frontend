@@ -17,7 +17,6 @@ a {
 }
 
 .section-wrapper {
-  background-color: #ffffff;
   height: 720px;
 }
 
@@ -42,8 +41,13 @@ a {
   display: block;
 }
 
+.primary-title {
+  color:#0b47a0;
+  font-size: xx-large;
+}
+
 .secondary-title {
-  color: #023349;
+  color: #0b47a0;
   display: block;
 }
 
@@ -64,13 +68,6 @@ a {
 }
 
 
-/* TEXTS */
-
-.primary-title {
-  color:#0996d8;
-}
-
-
 /* LINKS */
 
 .body-link {
@@ -84,7 +81,7 @@ a {
 }
 
 .my-nav-link {
-  color: #437f9b;
+  color: #428af7;
   position: relative;
   text-decoration: none;
 }
@@ -96,14 +93,14 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #02283a;
+  background-color: #428af7;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
 
 .my-nav-link:hover {
-  color: #02283a;
+  color: #428af7;
 }
 
 .my-nav-link:hover::before {
@@ -112,7 +109,7 @@ a {
 }
 
 .home-nav-link {
-  color: #83afe9;
+  color: #428af7;
   position: relative;
   text-decoration: none;
 }
@@ -124,20 +121,27 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #83afe9;
+  background-color: #428af7;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
 
 .home-nav-link:hover {
-  color: #83afe9;
+  color: #428af7;
 }
 
 .home-nav-link:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }
+
+/* BUTTONS */
+
+.button-layout {
+  margin: 4em;
+}
+
 
 /* CLIENT SECTION */
 
@@ -353,16 +357,32 @@ a {
 
 #admin-header {
   align-items: center;
+  background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1621804935/expeditemovers/images/sys/admin-header-background_kz7cz1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   display: flex;
-  height: 350px;
+  height: 550px;
   justify-content: center;
   text-align: center;
 }
 
-.admin-card {
-  text-align: center;
+div.admin-card {
+  background-color: #363535;
+  color: #afb4c4;
+  font-size: x-large;
   margin: 60px 0;
+  min-height: 65%;
+  margin-bottom: 50px;
+  text-align: center;
   width: 60%;
+}
+
+.admin-card-text {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .admin-col-layout {
@@ -371,19 +391,34 @@ a {
   align-items: center;
 }
 
+.admin-header-overlay {
+  align-items: center;
+  background-color: #dddddd;
+  display: flex;
+  height: 550px;
+  justify-content: center;
+  opacity: 50%;
+  width: 100%;
+}
+
+.admin-header-title {
+  color: #000000;
+  font-size: xx-large;
+  opacity: 100%;
+}
 
 /* FOOTER */
 
 #footer {
-  background: #0d86be;
+  background: #0d54be;
   color: #ffffff;
   min-height: 470px;
   width: 101%;
 }
 
 #footer-bottom {
-  background: #005881;
-  color: #17a9bd;
+  background: #0b47a0;
+  color: #428af7;
   padding: 1% 0;
 }
 
@@ -392,7 +427,7 @@ a {
 }
 
 .footer-title {
-  color: #30cde2;
+  color: #428af7;
 }
 
 .footer-text {
@@ -413,29 +448,29 @@ a {
 }
 
 .site-map-icon {
-  color: #0d86be;
+  color: #0d54be;
   text-decoration: none;
 }
 
 .contact-icon {
-  color: #0d86be;
+  color: #0d54be;
   text-decoration: none;
 }
 
 #facebook-icon {
-  color: #0d86be;
+  color: #0d54be;
 }
 
 #twitter-icon {
-  color: #0d86be;
+  color: #0d54be;
 }
 
 #instagram-icon {
-  color: #0d86be;
+  color: #0d54be;
 }
 
 #linkdin-icon {
-  color: #0d86be;
+  color: #0d54be;
 }
 
 .footer-link:hover > .site-map-icon {
