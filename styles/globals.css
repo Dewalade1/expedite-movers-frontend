@@ -25,6 +25,16 @@ a {
   max-width: 90%;
 }
 
+/* LINES */
+
+.colored-line {
+    margin: auto;
+    background: #005881;
+    display: block;
+    height: 4px;
+    width: 90px;
+}
+
 /* TITLES */
 
 .main-title {
@@ -102,7 +112,7 @@ a {
 }
 
 .home-nav-link {
-  color: #1d1c1c;
+  color: #83afe9;
   position: relative;
   text-decoration: none;
 }
@@ -114,14 +124,14 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #1d1c1c;
+  background-color: #83afe9;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
 
 .home-nav-link:hover {
-  color: #1d1c1c;
+  color: #83afe9;
 }
 
 .home-nav-link:hover::before {
@@ -132,7 +142,12 @@ a {
 /* CLIENT SECTION */
 
 #client-section {
-  background-color:#272626;
+  background-color:#2e2c2c;
+  min-height: 330px;
+}
+
+#home-client-section {
+  background-color:#403f3f;
   min-height: 330px;
 }
 
@@ -180,7 +195,7 @@ a {
 #services-header {
   background-attachment: fixed;
   background-color: #0d86be;
-  background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1621628070/expeditemovers/images/sys/services-title-background_zh6ckz.jpg");
+  background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1621646636/expeditemovers/images/sys/services-title-background_zh6ckz.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -304,7 +319,7 @@ a {
 /* ABOUT US PAGE */
 
 #about-us-header {
-  background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1621646012/expeditemovers/images/sys/about-us_background_odjflx.jpg");
+  background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1621646264/expeditemovers/images/sys/about-us_background_odjflx.jpg");
   background-color: #0d86be;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -326,6 +341,29 @@ a {
   padding: 5%;
   text-align: center;
   width: 70%;
+}
+
+
+/* ADMIN PAGE */
+
+#admin-header {
+  align-items: center;
+  display: flex;
+  height: 350px;
+  justify-content: center;
+  text-align: center;
+}
+
+.admin-card {
+  text-align: center;
+  margin: 60px 0;
+  width: 60%;
+}
+
+.admin-col-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
