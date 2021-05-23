@@ -20,10 +20,6 @@ a {
   height: 720px;
 }
 
-.line-width {
-  max-width: 90%;
-}
-
 /* LINES */
 
 .colored-line {
@@ -32,6 +28,11 @@ a {
     display: block;
     height: 4px;
     width: 90px;
+}
+
+.line-width {
+  background: #afb4c4;
+  max-width: 95%;
 }
 
 /* TITLES */
@@ -81,7 +82,7 @@ a {
 }
 
 .my-nav-link {
-  color: #428af7;
+  color: #0b47a0;
   position: relative;
   text-decoration: none;
 }
@@ -109,7 +110,7 @@ a {
 }
 
 .home-nav-link {
-  color: #428af7;
+  color: #77a7ee;
   position: relative;
   text-decoration: none;
 }
@@ -142,6 +143,12 @@ a {
   margin: 4em;
 }
 
+/* CARDS */
+
+.card-title {
+  color: #77a7ee;
+}
+
 
 /* CLIENT SECTION */
 
@@ -165,19 +172,20 @@ a {
 
 #landing-page {
   background-color: #00000;
-  background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1619879139/expeditemovers/images/sys/landing-page-background_qul3zi.jpg');
+  background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1621808915/expeditemovers/images/sys/home-pg-background_jpqpmu.jpg');
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 820px;
 }
 
 #main-landing-page-text {
-  color: #ffffff;
+  color: #3b3b3b;
 }
 
 .landing-page-text {
-   color: #d7dcef;
+   color: #1a1a1b;
 }
 
 .our-services {
@@ -304,8 +312,8 @@ a {
   opacity: 95%;
 }
 
-.location-card {
-  background-color: #363535;
+div.location-card {
+  background-color: #363535 !important;
   min-width: 80%;
   max-width: 81%;
   min-height: 65%;
@@ -397,14 +405,15 @@ div.admin-card {
   display: flex;
   height: 550px;
   justify-content: center;
-  opacity: 50%;
+  opacity: 65%;
   width: 100%;
 }
 
 .admin-header-title {
   color: #000000;
-  font-size: xx-large;
+  font-size: 6em;
   opacity: 100%;
+  width: 50%;
 }
 
 /* FOOTER */
@@ -418,16 +427,20 @@ div.admin-card {
 
 #footer-bottom {
   background: #0b47a0;
-  color: #428af7;
+  color: #77a7ee;
   padding: 1% 0;
 }
 
+.footer-col-left {
+  padding-left: 8em;
+}
+
 #footer-top {
-  padding: 5% 0;
+  padding: 6% 0;
 }
 
 .footer-title {
-  color: #428af7;
+  color: #77a7ee;
 }
 
 .footer-text {
@@ -438,7 +451,7 @@ div.admin-card {
 /* FOOTER LINKS */
 
 .footer-link {
-  color: #d7dcef;
+  color: #c8d0ee;
   text-decoration: none;
 }
 
@@ -474,31 +487,31 @@ div.admin-card {
 }
 
 .footer-link:hover > .site-map-icon {
-  color: #28abcf;
+  color: #47cbf0;
   text-decoration: none;
 }
 
 .footer-link:hover > .contact-icon {
-  color: #074729;
+  color: #36f19a;
   text-decoration: none;
 }
 
 .footer-link:hover > #facebook-icon {
-    color: #374d7c;
+    color: #98b6f5;
     text-decoration: none;
 }
 
 .footer-link:hover > #twitter-icon {
-  color: #374d7c;
+  color: #98b6f5;
   text-decoration: none;
 }
 
 .footer-link:hover > #instagram-icon {
-  color: #374d7c;
+  color: #98b6f5;
   text-decoration: none;
 }
 
 .footer-link:hover > #linkdin-icon {
-  color: #374d7c;
+  color: #98b6f5;
   text-decoration: none;
 }
