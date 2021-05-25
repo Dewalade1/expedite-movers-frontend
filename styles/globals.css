@@ -20,6 +20,12 @@ a {
   height: 720px;
 }
 
+.image-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* LINES */
 
 .colored-line {
@@ -390,11 +396,11 @@ div.location-card {
 }
 
 #contact-title-dark {
-  color: #ffffff;
+  color: #e3f2fd;
 }
 
 #contact-subtitle-dark {
-  color: #ffffff;
+  color: #e3f2fd;
   padding-bottom: 2em;
 }
 
@@ -481,7 +487,7 @@ div.admin-card {
 }
 
 .footer-text {
-  color: #ffffff;
+  color: #c8d0ee;
 }
 
 

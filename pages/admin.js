@@ -29,7 +29,7 @@ export default function Admin () {
               </b>
               <CardContent>
                 <p className="admin-card-text">View and edit your Databases Here</p>
-                <Button className="button-layout" variant="contained" color="primary" size="medium" disableElevation fullWidth>
+                <Button className="button-layout" variant="contained" color="primary" size="large" disableElevation fullWidth>
                   {" "}
                   Go to Database{" "}
                 </Button>
@@ -45,7 +45,7 @@ export default function Admin () {
               </b>
               <CardContent>
                 <p className="admin-card-text"> View and send your Emails here </p>
-                <Button className="button-layout" variant="contained" color="primary" size="medium" disableElevation fullWidth>
+                <Button className="button-layout" variant="contained" color="primary" size="large" disableElevation fullWidth>
                   {" "}
                   Access Email{" "}
                 </Button>
