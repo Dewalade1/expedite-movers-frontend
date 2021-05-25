@@ -36,10 +36,10 @@ export default function Locations () {
               <hr className="line-width" />
               <CardContent className="d-flex align-items-center justify-content-center">
                 <div className="location-card-text-layout">
-                  <h2 className="pb-4 card-title">
+                  <h1 className="card-title">
                     {" "}
                     <b>Lagos</b>
-                  </h2>
+                  </h1>
                   <div className="pb-2">
                     <Link href="https://goo.gl/maps/yKLv5axFieKFhcC6A">
                       <a className="body-link">
@@ -94,9 +94,9 @@ export default function Locations () {
               <hr className="line-width" />
               <CardContent className="d-flex align-items-center justify-content-center">
                 <div className="location-card-text-layout">
-                  <h2 className="pb-4 card-title">
-                    <b>Abuja</b>
-                  </h2>
+                  <h1 className="card-title">
+                    Abuja
+                  </h1>
                   <div className="pb-2">
                     <Link href="https://goo.gl/maps/EhP4cgRquqGw1gMo9">
                       <a className="body-link">
