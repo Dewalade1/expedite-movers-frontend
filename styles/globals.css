@@ -16,6 +16,16 @@ a {
   box-sizing: border-box;
 }
 
+div.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+div.col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .section-wrapper {
   height: 720px;
 }
@@ -81,7 +91,15 @@ a {
 #header.color-change {
   background-color: #3a3737;
   transition: background-color 250ms linear;
-  width: 101%;
+  width: 100%;
+}
+
+#home-logo {
+  padding-left: 2em;
+}
+
+.navbar-nav {
+  padding-right: 15%;
 }
 
 
@@ -239,7 +257,7 @@ a {
   background-attachment: fixed;
   background-color: #0d86be;
   background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1621646636/expeditemovers/images/sys/services-title-background_zh6ckz.jpg");
-  background-position: bottom;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 370px;
@@ -262,16 +280,18 @@ a {
 
 .title-adjust-1 {
   position: relative;
+  display: inline-block;
   right: 4%;
 }
 
 .title-adjust-2 {
   position: relative;
+  display: inline-block;
   left: 32%;
 }
 
 .service-img {
-  border-radius: 0em;
+  border-radius: 0.2em;
   height: 70%;
   width: 87%;
 }
@@ -382,6 +402,9 @@ div.location-card {
 
 #contacts-layout{
   background-color: #403f3f;
+  margin-left: 0em;
+  margin-right: 0em;
+  width:100%
 }
 
 #contact-form {
@@ -389,6 +412,11 @@ div.location-card {
   padding: 5%;
   text-align: center;
   width: 70%;
+}
+
+#contact-image {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .contact-textfield {
@@ -465,7 +493,7 @@ div.admin-card {
   background: #0d54be;
   color: #ffffff;
   min-height: 470px;
-  width: 101%;
+  width: 100%;
 }
 
 #footer-bottom {
@@ -558,3 +586,24 @@ div.admin-card {
   color: #98b6f5;
   text-decoration: none;
 }
+
+/* SMALL DEVICES (landscape phones, 576px and up) */
+@media (max-width: 575px) { 
+  .image-col {
+    display: block;
+    margin-top: 100%;
+  }
+
+  /* SMALL DEVICE HEADER */
+  #home-logo {
+    padding-left: 0em;
+  }
+
+
+  /* SMALL DEVICE CONTACT US PAGE */
+  #contact-form {
+    padding-top: 6em;
+    padding-bottom: 20%;
+    width: 92%;
+  }
+ }

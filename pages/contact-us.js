@@ -5,10 +5,7 @@ import Layout from "../layout/layout";
 import { Row, Col } from "react-bootstrap";
 
 import Button from "@material-ui/core/Button";
-import { blue } from "@material-ui/core/colors";
 import TextField from "@material-ui/core/TextField";
-import InputBase from "@material-ui/core/InputBase";
-import InputLabel from "@material-ui/core/InputLabel";
 import { fade, ThemeProvider, withStyles, makeStyles, createMuiTheme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -52,13 +49,6 @@ const ValidationTextField = withStyles({
   },
 })(TextField);
 
-const theme = createMuiTheme({
-  palette: {
-    primary: blue,
-  },
-});
-
-
 export default function Contact () {
 
   const classes = useStyles();
@@ -66,7 +56,7 @@ export default function Contact () {
     return (
       <Layout>
         <Row id="contacts-layout">
-          <Col className="pt-4 d-flex align-items-center justify-content-center">
+          <Col xs={12} sm={12} md={6} lg={6} xl={6} className="pt-4 d-flex align-items-center justify-content-center" id="contact-form-container">
             <form id="contact-form">
               <h2 id="contact-title-dark">
                 <b>Let's talk</b>
@@ -118,8 +108,8 @@ export default function Contact () {
               </Button>
             </form>
           </Col>
-          <Col className="image-col">
-            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1619468681/expeditemovers/images/sys/contact-us-side-image_ql8vme.jpg" alt="man calling on a phone" width="100%" />
+          <Col xs={12} sm={12} md={6} lg={6} xl={6} id="contact-image">
+            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1619468681/expeditemovers/images/sys/contact-us-side-image_ql8vme.jpg" alt="man calling on a phone" height="100%" width="100%" />
           </Col>
         </Row>
       </Layout>
