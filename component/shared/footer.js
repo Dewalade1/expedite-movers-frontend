@@ -22,6 +22,28 @@ export default function Footer () {
             <div id="footer-logo">
               <img src="https://res.cloudinary.com/hellodewa/image/upload/v1616559517/Moviecritics/images/logos/moviecritics-logo-transparent-background_sjnfhk.png" id="footer-img" alt="sitelogo" />
             </div>
+            <div id="medium-media-socials">
+              <Link href="#">
+                <a className="medium-socials-icon">
+                  <FacebookIcon fontSize="large" />
+                </a>
+              </Link>
+              <Link href="#">
+                <a className="medium-socials-icon">
+                  <TwitterIcon fontSize="large" />
+                </a>
+              </Link>
+              <Link href="#">
+                <a className="medium-socials-icon">
+                  <InstagramIcon fontSize="large" />
+                </a>
+              </Link>
+              <Link href="#">
+                <a className="medium-socials-icon">
+                  <LinkedInIcon fontSize="large" />
+                </a>
+              </Link>
+            </div>
             <p className="footer-text">Expeditemovers Ltd. is a highly dynamic logistic service provider positioned to render efficient and personalized service to her esteemed clients with 100% satisfaction guaranteed.</p>
           </Col>
           <Col className="footer-col" md={12} xl={2}>

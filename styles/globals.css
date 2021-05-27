@@ -544,6 +544,11 @@ div.admin-card {
   padding-top: 2em;
 }
 
+#medium-media-socials{
+    display: none;
+  }
+
+
 
 /* FOOTER LINKS */
 
@@ -650,8 +655,8 @@ div.admin-card {
   }
 
   #footer-contact-us-title {
-    padding-left: 2%;
-    font-size: 2em;
+    padding-left: 3%;
+    font-size: 1.5em;
   }
 
   #footer-img {
@@ -660,13 +665,14 @@ div.admin-card {
 }
 
   .footer-link {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 
   #footer-logo {
     display: flex;
     justify-content: center;
     margin-top: 1em;
+    padding-bottom: 1em;
   }
 
   #footer-img {
@@ -679,14 +685,29 @@ div.admin-card {
   }
 
   .footer-text {
-    font-size: 1.8em;
-    padding-top: 1.8em;
+    font-size: 1.5em;
+    padding-top: 0.8em;
     text-align: center;
   }
   
   .footer-title {
     padding-left: 1%;
-    font-size: 2em;
+    font-size: 1.8em;
+  }
+
+  #medium-media-socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .medium-socials-icon {
+    color: #77a7ee;
+    padding: 0.8% 3.5%;
+  }
+
+  .medium-socials-icon:hover {
+    color: #c8d0ee;
   }
 
 }
@@ -814,6 +835,39 @@ div.admin-card {
 
   img.MuiCardMedia-img {
     height: 170px;
+  }
+
+  /* EXTRA SMALL DEVICE FOOTER */
+
+  img#footer-img {
+    height: 5em;
+    width: 15em;
+  }
+
+  li.list-unstyled {
+    padding-right: 9%;
+  }
+
+  .footer-bottom-info {
+    font-size: 1.3em;
+  }
+
+  #footer-contact-us-title {
+    font-size: 1.4em;
+  }
+
+  .footer-link {
+    font-size: 1.3em;
+  }
+
+  .footer-text {
+    font-size: 1.3em;
+  }
+
+  .footer-title {
+    font-size: 1.4em;
+    padding-left: 2em;
+    text-align: center;
   }
 }
 
