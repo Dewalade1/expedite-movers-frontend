@@ -18,15 +18,15 @@ export default function Footer () {
     return (
       <footer id="footer">
         <Row className="" id="footer-top">
-          <Col className="footer-col-left justify-content-center" md={4}>
-            <div className="mt-4">
-              <img src="https://res.cloudinary.com/hellodewa/image/upload/v1616559517/Moviecritics/images/logos/moviecritics-logo-transparent-background_sjnfhk.png" width={180} height={50} alt="sitelogo" />
+          <Col className="footer-col-left" md={12} xl={4}>
+            <div id="footer-logo">
+              <img src="https://res.cloudinary.com/hellodewa/image/upload/v1616559517/Moviecritics/images/logos/moviecritics-logo-transparent-background_sjnfhk.png" id="footer-img" alt="sitelogo" />
             </div>
-            <p className="mt-4 pt-2 footer-text">Expeditemovers Ltd. is a highly dynamic logistic service provider positioned to render efficient and personalized service to her esteemed clients with 100% satisfaction guaranteed.</p>
+            <p className="footer-text">Expeditemovers Ltd. is a highly dynamic logistic service provider positioned to render efficient and personalized service to her esteemed clients with 100% satisfaction guaranteed.</p>
           </Col>
-          <Col className="pl-4 justify-content-center" md={2}>
+          <Col className="footer-col" md={12} xl={2}>
             <b>
-              <h5 className="mt-4 pl-4 ml-4 footer-title">Site Map</h5>
+              <h5 className="footer-title">Site Map</h5>
             </b>
             <ul>
               <li className="list-unstyled">
@@ -76,9 +76,9 @@ export default function Footer () {
               </li>
             </ul>
           </Col>
-          <Col className="pr-4 mr-4 justify-content-center" md={2}>
+          <Col id="footer-social-media" md={12} xl={2}>
             <b>
-              <h5 className="mt-4 ml-4 pl-3 footer-title">Our social Media</h5>
+              <h5 className="footer-title">Our social Media</h5>
             </b>
             <ul>
               <li className="list-unstyled">
@@ -119,12 +119,14 @@ export default function Footer () {
               </li>
             </ul>
           </Col>
-          <Col className="ml-4 pl-4 justify-content-center" md={3}>
-            <h5 className="mt-4 footer-title mb-2">Contact Us</h5>
+          <Col className="footer-col" md={12} xl={3}>
+            <h5 className="footer-title" id="footer-contact-us-title">
+              Contact Us
+            </h5>
             <Link href="tel:+2348023062321">
               <a>
                 <h5 className="footer-link">
-                  <PhoneIcon className="mr-1 contact-icon" />
+                  <PhoneIcon className="contact-icon" />
                   +234 8023062321
                 </h5>
               </a>
@@ -132,7 +134,7 @@ export default function Footer () {
             <Link href="tel:+2347065156145">
               <a>
                 <h5 className="footer-link">
-                  <PhoneOutlinedIcon className="mr-1 contact-icon" />
+                  <PhoneOutlinedIcon className="contact-icon" />
                   +234 7065156145
                 </h5>
               </a>
@@ -140,7 +142,7 @@ export default function Footer () {
             <Link href="mailto:info@expeditemoversng.com">
               <a>
                 <h5 className="footer-link">
-                  <MailOutlineIcon className="mr-1 contact-icon" />
+                  <MailOutlineIcon className="contact-icon" />
                   info@expeditemoversng.com
                 </h5>
               </a>
@@ -148,25 +150,31 @@ export default function Footer () {
             <Link href="mailto:expeditemovers@gmail.com">
               <a>
                 <h5 className="footer-link">
-                  <AlternateEmailIcon className="mr-1 contact-icon" />
+                  <AlternateEmailIcon className="contact-icon" />
                   expeditemovers@gmail.com
                 </h5>
               </a>
             </Link>
           </Col>
         </Row>
-        <Row className="justify-content-center" id="footer-bottom">
-          <h6 className="pt-2 pb-2">
-            &copy; {new Date().getFullYear()}
-            {"    "}
-            <Link href="#">
-              <a className="footer-link"> helloDewa </a>
-            </Link>
-            | Character vector created by{" "}
-            <a href="https://www.freepik.com/vectors/character" className="footer-link">
-              vectorjuice - www.freepik.com
-            </a>{" "}
-            | Made in Lagos, Nigeria
+        <Row id="footer-bottom">
+          <h6>
+            <span className="footer-bottom-info">
+              &copy; {new Date().getFullYear()}
+              {"    "}
+              <Link href="#">
+                <a className="footer-link"> helloDewa </a>
+              </Link>
+            </span>
+            <span className="footer-bottom-divider">| </span>
+            <span className="footer-bottom-info">
+              Character vector created by{" "}
+              <a href="https://www.freepik.com/vectors/character" className="footer-link">
+                vectorjuice - www.freepik.com
+              </a>{" "}
+            </span>
+            <span className="footer-bottom-divider">|</span>
+            <span className="footer-bottom-info"> Made in Lagos, Nigeria </span>
           </h6>
         </Row>
       </footer>
