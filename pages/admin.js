@@ -15,12 +15,12 @@ export default function Admin () {
     return (
       <Layout>
         <header className="black-bg-layout" id="admin-header">
-          <div className="admin-header-overlay">
-            <h1 className="admin-header-title"> Welcome to your Admin </h1>{" "}
+          <div id="admin-header-overlay">
+            <h1 id="admin-header-title"> Welcome to your Admin </h1>{" "}
           </div>
         </header>
         <Row className="section-wrapper black-bg-layout">
-          <Col xs={12} sm={12} md={6} lg={6} xl={6} className="admin-col-layout">
+          <Col xs={12} sm={12} md={12} lg={6} xl={6} className="admin-col-layout">
             <Card className="admin-card" variant="outlined">
               <CardMedia component="img" alt="MySQL logo" height="300" image="https://res.cloudinary.com/hellodewa/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1621807057/expeditemovers/images/logos/mysql_logo_y7mbve.jpg" title="Database Card" />
               <hr className="line-width" />
@@ -36,7 +36,7 @@ export default function Admin () {
               </CardContent>
             </Card>
           </Col>
-          <Col xs={12} sm={12} md={6} lg={6} xl={6} className="admin-col-layout">
+          <Col xs={12} sm={12} md={12} lg={6} xl={6} className="admin-col-layout">
             <Card className="admin-card" variant="outlined">
               <CardMedia component="img" alt="cPanel Logo" height="300" image="https://res.cloudinary.com/hellodewa/image/upload/v1621796270/expeditemovers/images/logos/webmail-img_xqogav.jpg" title="Email Access" />
               <hr className="line-width" />

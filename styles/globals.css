@@ -183,7 +183,7 @@ div.col {
   color: #77a7ee;
   font-weight: bold;
   font-size: 1.7em;
-  padding-bottom: 0.7em;
+  padding-bottom: 0.1em;
 }
 
 
@@ -206,16 +206,6 @@ div.col {
 
 
 /* HOME PAGE */
-
-#admin-header-overlay {
-  align-items: center;
-  background-color: #dddddd;
-  display: flex;
-  height: 720px;
-  justify-content: center;
-  opacity: 30%;
-  width: 100%;
-}
 
 #landing-page {
   background-color: #00000;
@@ -441,19 +431,6 @@ div.location-card {
 
 /* ADMIN PAGE */
 
-#admin-header {
-  align-items: center;
-  background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1621804935/expeditemovers/images/sys/admin-header-background_kz7cz1.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  height: 550px;
-  justify-content: center;
-  text-align: center;
-}
-
 div.admin-card {
   background-color: #363535;
   color: #afb4c4;
@@ -469,6 +446,7 @@ div.admin-card {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 1em;
 }
 
 .admin-col-layout {
@@ -477,7 +455,7 @@ div.admin-card {
   align-items: center;
 }
 
-.admin-header-overlay {
+#admin-header-overlay {
   align-items: center;
   background-color: #f1f1f1;
   display: flex;
@@ -487,7 +465,20 @@ div.admin-card {
   width: 100%;
 }
 
-.admin-header-title {
+#admin-header {
+  align-items: center;
+  background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1621804935/expeditemovers/images/sys/admin-header-background_kz7cz1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: 550px;
+  justify-content: center;
+  text-align: center;
+}
+
+#admin-header-title {
   color: #000000;
   font-size: 6em;
   opacity: 100%;
@@ -548,10 +539,10 @@ div.admin-card {
 
 .footer-text {
   color: #c8d0ee;
-  padding-top: 2em;
+  padding-top: 1.8em;
 }
 
-#medium-media-socials{
+#lg-device-socials{
   display: none;
 }
 
@@ -625,9 +616,103 @@ div.admin-card {
   text-decoration: none;
 }
 
-/* MEDIUM DEVICES (landscape phones, less than 768px) */
+/* LARGE DEVICES ( less than 1300px) */
+
+@media (max-width: 1299.98px) { 
+  /* LARGE DEVICE ADMIN*/
+
+  div.admin-card {
+    background-color: #363535;
+    color: #afb4c4;
+    font-size: x-large;
+    margin: 60px 0;
+    min-height: 65%;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 80%;
+}
+
+  img.MuiCardMedia-img {
+    height: 180px;
+  }
+
+  .admin-card-text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
+  }
+
+  /* LARGE DEVICES FOOTER*/
+
+  .footer-col-left {
+    padding-left: 8%;
+  }
+
+  .footer-col {
+    padding: 5.6% 0 0 0;
+  }
+
+  #footer-logo {
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+  }
+
+  #footer-social-media {
+    display: none;
+    text-align: center;
+  }
+
+  .footer-text {
+    padding-left: 0.5em;
+    padding-top: 1em;
+  }
+
+  .lg-device-socials-icon {
+    color: #77a7ee;
+    padding: 0.3% 3% 0.3% 0;
+  }
+
+  .lg-device-socials-icon:hover {
+    color: #c8d0ee;
+  }
+
+  #lg-device-socials{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+}
+
+/* MEDIUM DEVICES (landscape phones, less than 992px) */
 
 @media (max-width: 991.98px) { 
+
+  /* MEDIUM DEVICE ADMIN*/
+
+  img.MuiCardMedia-img {
+    height: 270px;
+  }
+
+  #admin-header-title {
+    text-align: center;
+    width: 75%;
+  }
+
+  div.admin-card {
+    width: 75%;
+  }
+
+  .admin-card-text {
+    width: 60%;
+  }
+
+  .admin-col-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   /* MEDIUM DEVICE FOOTER */
 
@@ -686,11 +771,6 @@ div.admin-card {
     width: 60%;
   }
 
-  #footer-social-media {
-    display: none;
-    text-align: center;
-  }
-
   .footer-text {
     font-size: 1.5em;
     padding-top: 0.8em;
@@ -702,19 +782,19 @@ div.admin-card {
     font-size: 1.8em;
   }
 
-  #medium-media-socials{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .medium-socials-icon {
+  .lg-device-socials-icon {
     color: #77a7ee;
     padding: 0.8% 3.5%;
   }
 
-  .medium-socials-icon:hover {
+  .lg-device-socials-icon:hover {
     color: #c8d0ee;
+  }
+
+  #lg-device-socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 }
@@ -762,15 +842,22 @@ div.admin-card {
 
   /* SMALL DEVICE ADMIN PAGE */
 
-  #admin-header {
-    height: 450px
+  img.MuiCardMedia-img {
+    height: 210px;
   }
-  
-  .admin-header-overlay {
+
+  #admin-header {
+  background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1621804935/expeditemovers/images/sys/admin-header-background_kz7cz1.jpg');
+  background-position: bottom;
   height: 450px;
 }
 
-  .admin-header-title {
+  
+  #admin-header-overlay {
+  height: 450px;
+}
+
+  #admin-header-title {
     color: #000000;
     font-size: 3em;
     opacity: 100%;
@@ -799,6 +886,7 @@ div.admin-card {
 
   .footer-bottom-info {
     display: block;
+    font-size: 1.3em;
     margin-left: 5%;
     padding: 1.8%;
     text-align: center;
@@ -806,12 +894,12 @@ div.admin-card {
   }
 
   .footer-col {
-    padding: 1% 10% 1% 0;
+    padding: 1% 8% 1% 0;
     text-align: center;
   }
 
   #footer-contact-us-title {
-    padding-left: 12%;
+    padding-left: 7%;
   }
 
   #footer-img {
@@ -819,7 +907,7 @@ div.admin-card {
   }
 
   .footer-link {
-    font-size: 1.1em;
+    font-size: 1.3em;
   }
 
   #footer-logo {
@@ -834,8 +922,12 @@ div.admin-card {
   }
 
   .footer-text {
-    padding-top: 1.8em;
+    padding-top: 1.2em;
     text-align: center;
+  }
+
+  .footer-title {
+    padding-left: 5.5%;
   }
   
 }
@@ -897,7 +989,7 @@ div.admin-card {
   /* FOLD DEVICE ADMIN PAGE */
 
   img.MuiCardMedia-img {
-    height: 170px;
+    height: 150px;
   }
 
   /* FOLD DEVICE FOOTER */
