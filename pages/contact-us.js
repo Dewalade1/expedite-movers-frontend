@@ -6,7 +6,7 @@ import { Row, Col } from "react-bootstrap";
 
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
-import { fade, ThemeProvider, withStyles, makeStyles, createMuiTheme } from "@material-ui/core/styles";
+import { withStyles, makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -51,12 +51,10 @@ const ValidationTextField = withStyles({
 
 export default function Contact () {
 
-  const classes = useStyles();
-
     return (
       <Layout>
         <Row id="contacts-layout">
-          <Col xs={12} sm={12} md={6} lg={6} xl={6} className="pt-4 d-flex align-items-center justify-content-center" id="contact-form-container">
+          <Col xs={12} sm={12} md={12} lg={6} xl={6} id="contact-form-container">
             <form id="contact-form">
               <h2 id="contact-title-dark">
                 <b>Let's talk</b>
@@ -108,7 +106,7 @@ export default function Contact () {
               </Button>
             </form>
           </Col>
-          <Col xs={12} sm={12} md={6} lg={6} xl={6} id="contact-image">
+          <Col xs={12} sm={12} md={12} lg={6} xl={6} id="contact-image">
             <img src="https://res.cloudinary.com/hellodewa/image/upload/v1619468681/expeditemovers/images/sys/contact-us-side-image_ql8vme.jpg" alt="man calling on a phone" height="100%" width="100%" />
           </Col>
         </Row>

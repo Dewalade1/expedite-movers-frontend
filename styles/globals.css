@@ -414,6 +414,13 @@ div.location-card {
   width: 70%;
 }
 
+#contact-form-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 5em 0 2em 0;
+}
+
 #contact-image {
   padding-left: 0;
   padding-right: 0;
@@ -545,8 +552,8 @@ div.admin-card {
 }
 
 #medium-media-socials{
-    display: none;
-  }
+  display: none;
+}
 
 
 
@@ -748,6 +755,11 @@ div.admin-card {
     width: 92%;
   }
 
+  #contact-form-container {
+  padding: 1.5em 0;
+}
+
+
   /* SMALL DEVICE ADMIN PAGE */
 
   #admin-header {
@@ -800,6 +812,10 @@ div.admin-card {
 
   #footer-contact-us-title {
     padding-left: 12%;
+  }
+
+  #footer-img {
+    height: 4em;
   }
 
   .footer-link {
