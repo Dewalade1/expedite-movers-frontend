@@ -26,6 +26,12 @@ div.col {
   padding-right: 0;
 }
 
+.align-items-origin {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .section-wrapper {
   min-height: 720px;
 }
@@ -56,16 +62,22 @@ div.col {
 .main-title {
   color: #023349;
   display: block;
+  text-align: center;
 }
 
 .primary-title {
-  color:#0b47a0;
+  color:#023349;
   font-size: xx-large;
+  display: block;
+  text-align: center;
+  width: 100%;
 }
 
 .secondary-title {
-  color: #0b47a0;
+  color: #023349;
+  font-size: large;
   display: block;
+  text-align: center;
 }
 
 .primary-title-dark {
@@ -365,6 +377,10 @@ div.location-card {
   border: 0;
 }
 
+.location-card-text-container {
+  padding-bottom: 0.6em;
+}
+
 .location-card-text-layout {
   min-width: 90%;
 }
@@ -619,7 +635,16 @@ div.admin-card {
 /* LARGE DEVICES ( less than 1300px) */
 
 @media (max-width: 1299.98px) { 
-  /* LARGE DEVICE ADMIN*/
+
+  /* LARGE DEVICE LOCATION PAGE */
+
+  div.location-card {
+    min-width: 89%;
+    max-width: 94%;
+    min-height: 74%;
+  }
+
+  /* LARGE DEVICE ADMIN PAGE */
 
   div.admin-card {
     background-color: #363535;
@@ -690,6 +715,18 @@ div.admin-card {
 
 @media (max-width: 991.98px) { 
 
+  .section-wrapper {
+    min-height: 800px;
+    padding: 10% 0;
+  }
+
+  /* MEDIUM DEVICE LOCATION PAGE */
+
+  div.location-card {
+    min-width: 68%;
+  }
+
+
   /* MEDIUM DEVICE ADMIN*/
 
   img.MuiCardMedia-img {
@@ -753,9 +790,9 @@ div.admin-card {
   }
 
   #footer-img {
-  width: 180px; 
-  height: 90px;
-}
+    width: 180px; 
+    height: 90px;
+  }
 
   .footer-link {
     font-size: 1.5em;
@@ -805,10 +842,6 @@ div.admin-card {
 
 @media (max-width: 575px) { 
 
-  .section-wrapper {
-    min-height: 800px;
-  }
-
   .image-col {
     display: block;
     margin-top: 100%;
@@ -838,7 +871,7 @@ div.admin-card {
 
   #contact-form-container {
   padding: 1.5em 0;
-}
+  }
 
 
   /* SMALL DEVICE ADMIN PAGE */
@@ -851,12 +884,12 @@ div.admin-card {
   background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1621804935/expeditemovers/images/sys/admin-header-background_kz7cz1.jpg');
   background-position: bottom;
   height: 450px;
-}
+ }
 
   
   #admin-header-overlay {
   height: 450px;
-}
+ }
 
   #admin-header-title {
     color: #000000;
@@ -904,7 +937,7 @@ div.admin-card {
   }
 
   #footer-img {
-    height: 4em;
+    height: 3.6em;
   }
 
   .footer-link {
@@ -940,6 +973,12 @@ div.admin-card {
     margin-bottom: 0;
   }
 
+  /* EXTRA SMALL DEVICE LOCATION PAGE */
+
+  .card-title {
+    padding-bottom: 20px;
+  }
+
   /* EXTRA SMALL DEVICE ADMIN PAGE */
 
   img.MuiCardMedia-img {
@@ -949,7 +988,7 @@ div.admin-card {
   /* EXTRA SMALL DEVICE FOOTER */
 
   img#footer-img {
-    height: 5em;
+    height: 4.4em;
     width: 15em;
   }
 
