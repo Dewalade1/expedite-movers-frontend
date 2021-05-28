@@ -665,7 +665,7 @@ div.admin-card {
 
   .footer-text {
     padding-left: 0.5em;
-    padding-top: 1em;
+    padding-top: 0.7em;
   }
 
   .lg-device-socials-icon {
@@ -678,9 +678,10 @@ div.admin-card {
   }
 
   #lg-device-socials{
+    align-items: center;
     display: flex;
     justify-content: start;
-    align-items: center;
+    padding-left: 1%;
   }
 
 }
@@ -957,7 +958,7 @@ div.admin-card {
   }
 
   .footer-bottom-info {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   #footer-contact-us-title {
@@ -965,11 +966,11 @@ div.admin-card {
   }
 
   .footer-link {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .footer-text {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .footer-title {
