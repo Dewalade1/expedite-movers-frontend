@@ -50,7 +50,7 @@ export default function Footer () {
             <b>
               <h5 className="footer-title">Site Map</h5>
             </b>
-            <ul>
+            <ul id="site-map-list">
               <li className="list-unstyled">
                 <Link href="/">
                   <a>

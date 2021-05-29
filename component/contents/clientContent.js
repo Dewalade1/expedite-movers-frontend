@@ -3,18 +3,38 @@ import React from 'react';
 
 import { Row, Col } from 'react-bootstrap';
 
-export default function ClientContent () {
+export default function ClientContent ({onHomePage}) {
     
     return (
-      <div className="d-flex justify-content-center align-items-center" id="client-section">
-        <Row>
-          <img src="https://res.cloudinary.com/hellodewa/image/upload/v1621641313/expeditemovers/images/logos/usaid-logo-greyscale_bhx281.png" alt="USAID" className="client-logo" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-        </Row>
+      <div id="client-section">
+        {onHomePage ? null : (
+          <div id="client-title">
+            <h3> Trusted By </h3>
+            <div className="colored-line"></div>
+          </div>
+        )}
+        <div>
+          <Row className="align-items-origin">
+            <Col xs={6} sm={6} md={2} lg={2} xl={2}>
+              <img src="https://res.cloudinary.com/hellodewa/image/upload/v1621641313/expeditemovers/images/logos/usaid-logo-greyscale_bhx281.png" alt="USAID" className="client-logo" />
+            </Col>
+            <Col xs={6} sm={6} md={2} lg={2} xl={2}>
+              <img src="https://res.cloudinary.com/hellodewa/image/upload/v1622234008/expeditemovers/images/logos/who-logo-greyscale_hybdci.png" alt="WHO" className="client-logo" />
+            </Col>
+            <Col xs={6} sm={6} md={2} lg={2} xl={2}>
+              <img src="https://res.cloudinary.com/hellodewa/image/upload/v1622234009/expeditemovers/images/logos/planet-projects-logo-greyscale_qt3vfn.png" alt="Planet Projects" className="client-logo" />
+            </Col>
+            <Col xs={6} sm={6} md={2} lg={2} xl={2}>
+              <img src="https://res.cloudinary.com/hellodewa/image/upload/v1621641313/expeditemovers/images/logos/usaid-logo-greyscale_bhx281.png" alt="USAID" className="client-logo" />
+            </Col>
+            <Col xs={6} sm={6} md={2} lg={2} xl={2}>
+              <img src="https://res.cloudinary.com/hellodewa/image/upload/v1622234008/expeditemovers/images/logos/who-logo-greyscale_hybdci.png" alt="WHO" className="client-logo" />
+            </Col>
+            <Col xs={6} sm={6} md={2} lg={2} xl={2}>
+              <img src="https://res.cloudinary.com/hellodewa/image/upload/v1622234009/expeditemovers/images/logos/planet-projects-logo-greyscale_qt3vfn.png" alt="Planet Projects" className="client-logo" />
+            </Col>
+          </Row>
+        </div>
       </div>
     );
 };
