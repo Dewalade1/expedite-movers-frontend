@@ -2,57 +2,80 @@ import React, { useState, useEffect } from 'react';
 
 import Link from 'next/link';
 
-import { Row, Col } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 let _ = require("lodash");
 
 export default function Header({onHomePage}) {
 
+  const [closeNav, setCloseNav] = useState(true);
   const [colorChange, setColorChange] = useState(false);
 
   const navLinks = ['Home', 'Services', 'Locations', 'About Us', 'Contact Us'];
 
   useEffect(function mount() {
   const changeNavbarColor = () => {
-    if (window.scrollY >= 40) {
-      setColorChange(true);
-    } else {
-      setColorChange(false);
-    }
-  };
-  window.addEventListener('scroll', changeNavbarColor);
 
-  return function unMount () {
-    window.removeEventListener("scroll", changeNavbarColor);
-  };
-});
+    if (window.scrollY >= 40) {
+        setColorChange(true);
+      } else {
+        setColorChange(false);
+      }
+    };
+    window.addEventListener('scroll', changeNavbarColor);
+
+    return function unMount () {
+      window.removeEventListener("scroll", changeNavbarColor);
+    };
+  });
 
     return (
-      <nav className={colorChange ? "navbar navbar-expand-lg color-change pt-3 pb-3 pl-4" : "navbar navbar-expand-lg pt-3 pb-3 pl-4"} id="header">
-        <Col id={onHomePage ? "home-logo" : "home-logo"}>
+      <nav className={colorChange || !closeNav ? "navbar navbar-expand-md color-change" : "navbar navbar-expand-md"} id="header">
+        <Col xs={6} sm={6} md={3} id="home-logo">
           <a className="navbar-brand ml-4" href="#">
             <img src="https://res.cloudinary.com/hellodewa/image/upload/v1616559517/Moviecritics/images/logos/moviecritics-logo-transparent-background_sjnfhk.png" width={180} height={50} alt="sitelogo" />
           </a>
         </Col>
-        <Col>
-          {/* <div>
-            <i className="fas fa-bars"></i>
-          </div> */}
-            <ul className="navbar-nav d-flex justify-content-end align-items-center">
-              {navLinks.map((link) => {
-                let kebabLink = _.kebabCase(link);
-                let lowerCaseLink = _.toLower(kebabLink);
+        <Col xs={3} sm={3} md={9} id="large-devices-nav">
+          <ul className="navbar-nav align-items-right">
+            {navLinks.map((link) => {
+              let kebabLink = _.kebabCase(link);
+              let lowerCaseLink = _.toLower(kebabLink);
 
-                return (
-                  <li className="nav-item" key={link}>
-                    <Link href={lowerCaseLink == "home" ? "/" : `/${lowerCaseLink}`} key={link}>
-                      <a className={onHomePage ? "nav-link home-nav-link" : "nav-link my-nav-link"}>{link}</a>
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+              return (
+                <li className="nav-item" key={link}>
+                  <Link href={lowerCaseLink == "home" ? "/" : `/${lowerCaseLink}`} key={link}>
+                    <a className={onHomePage ? "nav-link home-nav-link" : "nav-link my-nav-link"}>{link}</a>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </Col>
+        <Col xs={6} sm={6} md={9} id="sm-devices-nav">
+          <div id="sm-nav-btn" onClick={() => setCloseNav(!closeNav)} className={closeNav ? "nav-visible" : "nav-hidden"}>
+            <i className="fas fa-bars 3x"></i>
+          </div>
+          <div id="sm-nav-btn" onClick={() => setCloseNav(!closeNav)} className={!closeNav ? "nav-visible" : "nav-hidden"}>
+            <i class="fas fa-times 3x"></i>
+          </div>
+        </Col>
+        <div className={!closeNav ? "nav-visible sm-devices-nav-list" : "nav-hidden"}>
+          <ul className="navbar-nav align-items-origin">
+            {navLinks.map((link) => {
+              let kebabLink = _.kebabCase(link);
+              let lowerCaseLink = _.toLower(kebabLink);
+
+              return (
+                <li className="nav-item" key={link}>
+                  <Link href={lowerCaseLink == "home" ? "/" : `/${lowerCaseLink}`} key={link}>
+                    <a className={onHomePage ? "nav-link home-nav-link" : "nav-link my-nav-link"}>{link}</a>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </nav>
     );
 }

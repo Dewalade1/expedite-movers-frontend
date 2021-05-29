@@ -112,23 +112,34 @@ div.col {
 
 #header {
   background-color: transparent;
+  display: flex;
+  justify-content: center;
+  padding: 0;
   position: fixed;
-  width: 101%;
+  width: 100%;
   z-index: 20;
 }
 
 #header.color-change {
-  background-color: #3a3737;
+  background-color: #313033;
   transition: background-color 250ms linear;
   width: 100%;
 }
 
 #home-logo {
-  padding-left: 2em;
+  padding: 1.2em 0 1.2em 2em;
 }
 
-.navbar-nav {
-  padding-right: 15%;
+#sm-devices-nav {
+  display: none;
+}
+
+.sm-devices-nav-list {
+  display: none;
+}
+
+ul.navbar-nav {
+  padding-right: 8%;
 }
 
 
@@ -243,23 +254,8 @@ div.col {
 
 /* HOME PAGE */
 
-#landing-page-wrapper {
-  background-color: #00000;
-  background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1621808915/expeditemovers/images/sys/home-pg-background_jpqpmu.jpg');
-  background-attachment: fixed;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 820px;
-}
-
 #landing-page-col-1 {
   width: 92%;
-}
-
-#main-landing-page-text {
-  color: #3b3b3b;
-  margin-left: 14%;
 }
 
 #landing-page-img {
@@ -271,6 +267,25 @@ div.col {
    display: flex;
    justify-content: center;
    margin-left: 14%;
+}
+
+#landing-page-wrapper {
+  background-color: #00000;
+  background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1621808915/expeditemovers/images/sys/home-pg-background_jpqpmu.jpg');
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 820px;
+}
+
+#main-landing-page-text {
+  color: #3b3b3b;
+  margin-left: 14%;
+}
+
+.nav-hidden {
+  display: none;
 }
 
 
@@ -329,7 +344,6 @@ div.col {
 img.service-img {
   aspect-ratio: 16/10;
   border-radius: 0.2em;
-  /* height: 58%; */
   width: 87%;
 }
 
@@ -367,15 +381,6 @@ img.service-img {
 .white-bg-layout {
   background-color: #e1e4ee;
   color: #005881;
-}
-
-.blue-bg-layout {
-  background-color: #005881;
-  color: #e1e4ee;
-}
-
-.freight-text {
-  color: #ffffff;
 }
 
 /* LOCATIONS PAGE */
@@ -630,7 +635,7 @@ div.admin-card {
 }
 
 
-/* LARGE DEVICES ( less than 1300px) */
+/* LARGE DEVICES ( desktops, less than 1300px) */
 
 @media (max-width: 1299.98px) { 
 
@@ -750,7 +755,7 @@ div.admin-card {
 
 }
 
-/* MEDIUM DEVICES (landscape phones, less than 992px) */
+/* MEDIUM DEVICES (tablets, less than 992px) */
 
 @media (max-width: 991.98px) { 
 
@@ -924,6 +929,7 @@ div.admin-card {
 
 }
 
+/* SMALL DEVICES (landscape phones, 576px and up) */
 
 @media (max-width: 767.5px) {
 
@@ -950,19 +956,106 @@ div.admin-card {
 
   .colored-line {
     width: 12%;
-}
+  }
 
   .section-wrapper {
     min-height: 60em;
   }
 
-  /* TITLES */
+  /* SMALL DEVICE TITLES */
 
   .secondary-title {
     padding-left: 10%;
     padding-right: 0%;
     width: 85%;
   }
+
+  /* SMALL DEVICE LINKS */
+
+.my-nav-link {
+  color: #428af7;
+  position: relative;
+  text-decoration: none;
+}
+
+.my-nav-link::before {
+  width: 6%;
+  bottom: 0;
+  left: auto;
+  right: auto;
+}
+
+.home-nav-link::before {
+  width: 6%;
+  bottom: 0;
+  left: auto;
+  right: auto;
+}
+
+
+  /* SMALL DEVICE HEADER */
+
+  .background-change-on-nav-open {
+    background-color: #313033;
+  }
+
+  #large-devices-nav {
+    display: none;
+  }
+
+  .nav-visible {
+    display: flex;
+  }
+
+  .nav-hidden {
+    display: none;
+  }
+
+  #sm-devices-nav {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 1.5em 0 1.5em 2em;
+  }
+
+  .sm-devices-nav-list {
+    background-color: #3b3b3b;
+    bottom: 0;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 1.2em 0;
+    -webkit-transition: background-color 250ms linear;
+    width: 100%;
+  }
+
+  #sm-nav-btn {
+    color: #0d54be;
+    height: 100%;
+    padding: 5% 8%;
+    width: 30%;
+  }
+
+  #sm-nav-btn:hover {
+    color: #90bafa;
+  }
+
+  li.nav-item {
+    text-align: center;
+    width: 100%;
+  }
+
+  li.nav-item:hover {
+    background-color: #4d4d4d;
+  }
+
+  ul.navbar-nav {
+    padding-right: 0;
+    width: 100%;
+  }
+
 
   /* SMALL DEVICE HOME PAGE */
 
@@ -1062,7 +1155,7 @@ div.admin-card {
 
   .service-info-col {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     order: 2;
   }
 
@@ -1089,7 +1182,7 @@ div.admin-card {
   }
 }
 
-/* SMALL DEVICES (landscape phones, 576px and up) */
+/* EXTRA SMALL DEVICES (portrait phones, less than 576px) */
 
 @media (max-width: 575px) { 
 
@@ -1106,13 +1199,13 @@ div.admin-card {
     min-height: 46em;
   }
 
-  /* SMALL DEVICE HEADER */
+  /* EXTRA SMALL DEVICE HEADER */
 
   #home-logo {
     padding-left: 0em;
   }
 
-  /* SMALL DEVICE CONTACT US PAGE */
+  /* EXTRA SMALL DEVICE CONTACT US PAGE */
 
   #contact-form {
     padding-top: 6em;
@@ -1125,7 +1218,7 @@ div.admin-card {
   }
 
 
-  /* SMALL DEVICE ADMIN PAGE */
+  /* EXTRA SMALL DEVICE ADMIN PAGE */
 
   img.MuiCardMedia-img {
     height: 210px;
@@ -1159,7 +1252,7 @@ div.admin-card {
     width: 89%;
   }
 
-  /* SMALL DEVICE FOOTER */
+  /* EXTRA SMALL DEVICE FOOTER */
 
   li.list-unstyled {
     padding-right: 9%;
@@ -1213,9 +1306,11 @@ div.admin-card {
   
 }
 
+/* LOWER RES EXTRA SMALL DEVICES */
+
 @media (max-width: 400px) {
 
-  /* EXTRA SMALL DEVICE TITLES */
+  /* LOWER RES EXTRA SMALL DEVICE TITLES */
 
   .secondary-title {
     padding-left: 15%;
@@ -1227,19 +1322,19 @@ div.admin-card {
     margin-bottom: 0;
   }
 
-  /* EXTRA SMALL DEVICE LOCATION PAGE */
+  /* LOWER RES EXTRA SMALL DEVICE LOCATION PAGE */
 
   .card-title {
     padding-bottom: 20px;
   }
 
-  /* EXTRA SMALL DEVICE ADMIN PAGE */
+  /* LOWER RES EXTRA SMALL DEVICE ADMIN PAGE */
 
   img.MuiCardMedia-img {
     height: 170px;
   }
 
-  /* EXTRA SMALL DEVICE FOOTER */
+  /* LOWER RES EXTRA SMALL DEVICE FOOTER */
 
   img#footer-img {
     height: 2.8em;
@@ -1295,6 +1390,8 @@ div.admin-card {
     padding-left: 0;
   }
 }
+
+/* FOLD DEVICES (Samsung Galaxy Folds) */
 
 @media (max-width: 290px) {
 
