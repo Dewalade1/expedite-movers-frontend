@@ -27,7 +27,7 @@ export default function Locations () {
             <h5 className="secondary-title">Find us at our nearest locations</h5>
           </div>
         </header>
-        <Row className="section-wrapper location-section">
+        <Row className="location-section section-wrapper">
           <Col xs={12} sm={12} md={12} lg={6} xl={6} className="align-items-origin">
             <Card className="location-card" variant="outlined">
               <CardContent>
