@@ -7,17 +7,17 @@ import ServicesContent from '../component/contents/servicesContent';
 export default function Services () {
     return (
       <Layout>
-        <header className="d-flex justify-content-center align-items-center" id="services-header">
+        <header className="align-items-origin" id="services-header">
           <div>
-            <h2 className="text-center services-title">
+            <h2 className="primary-title">
               {" "}
               <b> Services </b>
             </h2>
-            <h5 className="text-center services-title">We provide quality service to give you piece of mind</h5>
+            <h3 className="secondary-title">We provide quality service to give you piece of mind</h3>
           </div>
         </header>
-        <ServicesContent/>
-        <ClientContent/>
+        <ServicesContent />
+        <ClientContent />
       </Layout>
     );
 };

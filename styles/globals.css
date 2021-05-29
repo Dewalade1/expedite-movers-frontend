@@ -26,14 +26,32 @@ div.col {
   padding-right: 0;
 }
 
+.align-items-left {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.align-items-right {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .align-items-origin {
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
+.section-title {
+  color: #ffffffff;
+  padding-top: 60px;
+}
+
 .section-wrapper {
-  min-height: 720px;
+  min-height: 860px;
+  padding-bottom: 10%;
 }
 
 .image-col {
@@ -58,12 +76,6 @@ div.col {
 }
 
 /* TITLES */
-
-.main-title {
-  color: #023349;
-  display: block;
-  text-align: center;
-}
 
 .primary-title {
   color:#023349;
@@ -201,9 +213,16 @@ div.col {
 
 /* CLIENT SECTION */
 
+#client-title {
+  background-color: #2e2c2c;
+  color: #ffffffff;
+  padding-bottom: 45px;
+  text-align: center;
+}
+
 #client-section {
   background-color:#2e2c2c;
-  min-height: 330px;
+  padding: 6%;
 }
 
 #home-client-section {
@@ -213,7 +232,7 @@ div.col {
 
 .client-logo {
   height: 90%;
-  width: 350px;
+  width: 200px;
 }
 
 
@@ -239,20 +258,22 @@ div.col {
    margin-left: 4em;
 }
 
-.our-services {
-  background-color: #272626;
-  color: #ffffffff;
-  padding-top: 40px;
-  padding-bottom: 100px;
-}
-
 
 /* SERVICES */
 
 .info-container{
-  margin-bottom: 20%;
-  padding: 10%;
+  height: 15em;
   width: 90%;
+  z-index: 10;
+}
+
+.info-container-right {
+  padding-right: 20%;
+}
+
+.info-container-left {
+  padding-bottom: 3em;
+  padding-left: 20%;
 }
 
 #services-header {
@@ -266,71 +287,61 @@ div.col {
   opacity: 95%;
 }
 
-.services-title {
-  color:#023349
-}
-
 .service-title-left {
   border-left: 5px solid #005881;
+  float: left;
   padding-left: 3%;
+  width: 12.5em;
 }
 
 .service-title-right {
   border-left: 5px solid #005881;
+  float: right;
   padding-left: 3%;
+  width: 12.5em;
 }
 
 .title-adjust-1 {
   position: relative;
-  display: inline-block;
-  right: 4%;
+  right: -0.5em;
 }
 
 .title-adjust-2 {
   position: relative;
-  display: inline-block;
-  left: 32%;
+  width: 6.7em;
 }
 
-.service-img {
+img.service-img {
+  aspect-ratio: 16/10;
   border-radius: 0.2em;
-  height: 70%;
+  /* height: 58%; */
   width: 87%;
 }
 
 .service-info-left {
   border-radius: 0.5em;
   background-color:#403f3f;
+  display: block;
+  float: left;
   font-size: xx-large;
-  min-height: calc(35% + 90px);
-  margin-top: 3%;
-  padding: 5%;
-  position: absolute;
-  width: calc(100% + 200px);
-  z-index: 10;
+  min-height: calc(100% + 90px);
+  margin-top: 5%;
+  padding: 1.5em;
+  position: relative;
+  width: calc(175% + 30px);
 }
 
 .service-info-right {
-  align-self: left;
   border-radius: 0.5em;
   background-color:#403f3f;
   display: block;
+  float: right;
   font-size: xx-large;
-  min-height: calc(35% + 90px);
-  margin-top: 3%;
-  margin-right: 30%;
-  padding: 5%;
-  position: absolute;
-  right: 0.5%;
-  width: calc(100% + 200px);
-  z-index: 10;
-}
-
-.freight-section {
-  background-attachment: fixed;
-  background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1620740617/expeditemovers/images/sys/freight-background-img_zebis1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  min-height: calc(100% + 90px);
+  margin-top: 5%;
+  padding: 1.5em;
+  position: relative;
+  width: calc(175% + 30px);
 }
 
 .black-bg-layout {
@@ -586,19 +597,7 @@ div.admin-card {
   text-decoration: none;
 }
 
-#facebook-icon {
-  color: #0d54be;
-}
-
-#twitter-icon {
-  color: #0d54be;
-}
-
-#instagram-icon {
-  color: #0d54be;
-}
-
-#linkdin-icon {
+.social-media-icon {
   color: #0d54be;
 }
 
@@ -612,29 +611,62 @@ div.admin-card {
   text-decoration: none;
 }
 
-.footer-link:hover > #facebook-icon {
+.footer-link:hover > .social-media-icon {
     color: #98b6f5;
     text-decoration: none;
 }
 
-.footer-link:hover > #twitter-icon {
-  color: #98b6f5;
-  text-decoration: none;
-}
-
-.footer-link:hover > #instagram-icon {
-  color: #98b6f5;
-  text-decoration: none;
-}
-
-.footer-link:hover > #linkdin-icon {
-  color: #98b6f5;
-  text-decoration: none;
-}
 
 /* LARGE DEVICES ( less than 1300px) */
 
 @media (max-width: 1299.98px) { 
+
+  /* LARGE DEVICES SERVICES PAGE */
+
+/* .title-adjust-1 {
+  position: relative;
+  display: inline-block;
+  right: 7%;
+}
+
+.title-adjust-2 {
+  position: relative;
+  display: inline-block;
+  left: 32%;
+}
+
+.service-info-left {
+  border-radius: 0.5em;
+  background-color:#403f3f;
+  font-size: xx-large;
+  min-height: calc(35% + 90px);
+  margin-top: 3%;
+  padding: 5%;
+  position: absolute;
+  width: calc(100% + 200px);
+  z-index: 10;
+}
+
+.service-info-right {
+  align-self: left;
+  border-radius: 0.5em;
+  background-color:#403f3f;
+  display: block;
+  font-size: xx-large;
+  min-height: calc(35% + 90px);
+  margin-top: 3%;
+  margin-right: 30%;
+  padding: 5%;
+  position: absolute;
+  right: 0.5%;
+  width: calc(100% + 200px);
+  z-index: 10;
+}
+
+  .service-title-right {
+    margin-left: 12%;
+  } */
+
 
   /* LARGE DEVICE LOCATION PAGE */
 
@@ -705,7 +737,7 @@ div.admin-card {
   #lg-device-socials{
     align-items: center;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     padding-left: 1%;
   }
 
@@ -1023,7 +1055,7 @@ div.admin-card {
 
   .card-title {
     padding-bottom: 0.01em;
-    margin-bottom: 0;
+    margin-bottom: 1em;
   }
 
   /* FOLD DEVICE ADMIN PAGE */

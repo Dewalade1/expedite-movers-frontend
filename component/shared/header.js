@@ -28,28 +28,31 @@ export default function Header({onHomePage}) {
 });
 
     return (
-      <Row className={colorChange ? "navbar color-change pt-3 pb-3 pl-4" : "navbar pt-3 pb-3 pl-4"} id="header">
-        <Col className={onHomePage ? "pl-4 home-nav-link" : "pl-4"}>
-          <div className="ml-4">
+      <nav className={colorChange ? "navbar navbar-expand-lg color-change pt-3 pb-3 pl-4" : "navbar navbar-expand-lg pt-3 pb-3 pl-4"} id="header">
+        <Col id={onHomePage ? "home-logo" : "home-logo"}>
+          <a className="navbar-brand ml-4" href="#">
             <img src="https://res.cloudinary.com/hellodewa/image/upload/v1616559517/Moviecritics/images/logos/moviecritics-logo-transparent-background_sjnfhk.png" width={180} height={50} alt="sitelogo" />
-          </div>
+          </a>
         </Col>
         <Col>
-          <ul className="nav d-flex justify-content-center align-items-center">
-            {navLinks.map((link) => {
-              let kebabLink = _.kebabCase(link);
-              let lowerCaseLink = _.toLower(kebabLink);
+          {/* <div>
+            <i className="fas fa-bars"></i>
+          </div> */}
+            <ul className="navbar-nav d-flex justify-content-end align-items-center">
+              {navLinks.map((link) => {
+                let kebabLink = _.kebabCase(link);
+                let lowerCaseLink = _.toLower(kebabLink);
 
-              return (
-                <li className="nav-item" key={link}>
-                  <Link href={lowerCaseLink == "home" ? "/" : `/${lowerCaseLink}`}>
-                    <a className={/*onHomePage && colorChange  ? "nav-link home-nav-link-color-change" :*/ onHomePage ? "nav-link home-nav-link" : "nav-link my-nav-link"}>{link}</a>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+                return (
+                  <li className="nav-item" key={link}>
+                    <Link href={lowerCaseLink == "home" ? "/" : `/${lowerCaseLink}`} key={link}>
+                      <a className={onHomePage ? "nav-link home-nav-link" : "nav-link my-nav-link"}>{link}</a>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
         </Col>
-      </Row>
+      </nav>
     );
 }

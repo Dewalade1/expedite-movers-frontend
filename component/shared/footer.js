@@ -107,7 +107,7 @@ export default function Footer () {
                 <Link href="#">
                   <a>
                     <h5 className="footer-link">
-                      <FacebookIcon id="facebook-icon" /> Facebook
+                      <FacebookIcon className="social-media-icon" /> Facebook
                     </h5>
                   </a>
                 </Link>
@@ -116,7 +116,7 @@ export default function Footer () {
                 <Link href="#">
                   <a>
                     <h5 className="footer-link">
-                      <TwitterIcon id="twitter-icon" /> Twitter
+                      <TwitterIcon className="social-media-icon" /> Twitter
                     </h5>
                   </a>
                 </Link>
@@ -125,7 +125,7 @@ export default function Footer () {
                 <Link href="#">
                   <a>
                     <h5 className="footer-link">
-                      <InstagramIcon id="instagram-icon" /> Instagram
+                      <InstagramIcon className="social-media-icon" /> Instagram
                     </h5>
                   </a>
                 </Link>
@@ -134,7 +134,7 @@ export default function Footer () {
                 <Link href="#">
                   <a>
                     <h5 className="footer-link">
-                      <LinkedInIcon id="linkdin-icon" /> LinkedIn
+                      <LinkedInIcon className="social-media-icon" /> LinkedIn
                     </h5>
                   </a>
                 </Link>
