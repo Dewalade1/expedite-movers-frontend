@@ -30,12 +30,16 @@ div.col {
   align-items: center;
   display: flex;
   justify-content: flex-start;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .align-items-right {
   align-items: center;
   display: flex;
   justify-content: flex-end;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .align-items-origin {
@@ -50,8 +54,9 @@ div.col {
 }
 
 .section-wrapper {
-  min-height: 860px;
-  padding-bottom: 10%;
+  min-height: 700px;
+  min-width: 100%;
+  padding: 7em 0 12em 0;
 }
 
 .image-col {
@@ -67,7 +72,7 @@ div.col {
     background: #005881;
     display: block;
     height: 4px;
-    width: 90px;
+    width: 4.5%;
 }
 
 .line-width {
@@ -222,7 +227,7 @@ div.col {
 
 #client-section {
   background-color:#2e2c2c;
-  padding: 6%;
+  padding: 5%;
 }
 
 #home-client-section {
@@ -231,8 +236,8 @@ div.col {
 }
 
 .client-logo {
-  height: 90%;
-  width: 200px;
+  /* height: 90%; */
+  width: 96%;
 }
 
 
@@ -324,7 +329,7 @@ img.service-img {
   display: block;
   float: left;
   font-size: xx-large;
-  min-height: calc(100% + 90px);
+  min-height: calc(100% + 130px);
   margin-top: 5%;
   padding: 1.5em;
   position: relative;
@@ -337,7 +342,7 @@ img.service-img {
   display: block;
   float: right;
   font-size: xx-large;
-  min-height: calc(100% + 90px);
+  min-height: calc(100% + 130px);
   margin-top: 5%;
   padding: 1.5em;
   position: relative;
@@ -556,12 +561,12 @@ div.admin-card {
 
 .footer-title {
   color: #77a7ee;
-  padding-left: 2em;
+  padding-left: 3.2em;
   padding-top: 3%;
 }
 
 #footer-contact-us-title {
-  padding-left: 0;
+  padding-left: 1.2em;
 }
 
 .footer-text {
@@ -621,51 +626,45 @@ div.admin-card {
 
 @media (max-width: 1299.98px) { 
 
+  .colored-line {
+    width: 7%;
+  }
+
+  .section-wrapper {
+    min-height: 700px;
+    min-width: 100%;
+    padding: 6em 0 9em 0;
+}
+
   /* LARGE DEVICES SERVICES PAGE */
 
-/* .title-adjust-1 {
-  position: relative;
-  display: inline-block;
-  right: 7%;
+  .info-container{
+    min-height: 18em;
+  }
+
+  .info-container-right {
+    font-size: small;
+    padding-bottom: 6em;
 }
 
-.title-adjust-2 {
-  position: relative;
-  display: inline-block;
-  left: 32%;
-}
+  .info-container-left {
+    font-size: small;
+    padding-bottom: 6em;
+  }
 
-.service-info-left {
-  border-radius: 0.5em;
-  background-color:#403f3f;
-  font-size: xx-large;
-  min-height: calc(35% + 90px);
-  margin-top: 3%;
-  padding: 5%;
-  position: absolute;
-  width: calc(100% + 200px);
-  z-index: 10;
-}
-
-.service-info-right {
-  align-self: left;
-  border-radius: 0.5em;
-  background-color:#403f3f;
-  display: block;
-  font-size: xx-large;
-  min-height: calc(35% + 90px);
-  margin-top: 3%;
-  margin-right: 30%;
-  padding: 5%;
-  position: absolute;
-  right: 0.5%;
-  width: calc(100% + 200px);
-  z-index: 10;
-}
+  .service-title-left {
+    width: 10.1em;
+  }
 
   .service-title-right {
-    margin-left: 12%;
-  } */
+    width: 7.1em;
+  }
+
+
+  img.service-img {
+    aspect-ratio: 16/12;
+    width: 90%;
+  }
 
 
   /* LARGE DEVICE LOCATION PAGE */
@@ -687,7 +686,7 @@ div.admin-card {
     margin-bottom: 50px;
     text-align: center;
     width: 80%;
-}
+  }
 
   img.MuiCardMedia-img {
     height: 180px;
@@ -748,8 +747,32 @@ div.admin-card {
 @media (max-width: 991.98px) { 
 
   .section-wrapper {
-    min-height: 800px;
-    padding: 10% 0;
+    min-height: 500px;
+    padding: 10% 0 20% 0;
+  }
+
+  /* MEDIUM DEVICE SERVICES PAGE */
+
+  .service-title-left {
+    font-size: 2.3em;
+  }
+
+  .service-title-right {
+    font-size: 2.3em;
+  }
+
+
+  img.service-img {
+    aspect-ratio: 16/11;
+    width: 95%;
+  }
+
+  .service-info-left {
+    font-size: 2em;
+  }
+
+  .service-info-right {
+    font-size: 2em;
   }
 
   /* MEDIUM DEVICE LOCATION PAGE */
@@ -787,6 +810,7 @@ div.admin-card {
   /* MEDIUM DEVICE FOOTER */
 
   li.list-unstyled {
+    padding-left: 0;
     padding-right: 9%;
   }
 
@@ -808,22 +832,22 @@ div.admin-card {
   }
 
   .footer-col-left {
-    padding: 1% 13%;
+    padding: 1% 8%;
   }
 
   .footer-col {
-    padding: 1% 1% 1% 0;
-    text-align: center;
+    padding: 1% 1% 1% 6%;
+    text-align: left;
   }
 
   #footer-contact-us-title {
-    padding-left: 3%;
-    font-size: 1.5em;
+    padding-left: 3.5%;
+    font-size: 1.8em;
   }
 
   #footer-img {
     width: 180px; 
-    height: 90px;
+    height: 70px;
   }
 
   .footer-link {
@@ -838,17 +862,17 @@ div.admin-card {
   }
 
   #footer-img {
-    width: 60%;
+    width: 40%;
   }
 
   .footer-text {
     font-size: 1.5em;
     padding-top: 0.8em;
-    text-align: center;
+    text-align: left;
   }
   
   .footer-title {
-    padding-left: 1%;
+    padding-left: 4%;
     font-size: 1.8em;
   }
 
@@ -867,30 +891,166 @@ div.admin-card {
     align-items: center;
   }
 
+  #site-map-list {
+    padding-left: 0;
+  }
+
 }
 
+
+@media (max-width: 767.5px) {
+
+  div.row {
+    padding: 0;
+  }
+
+  div.col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .align-items-left {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .align-items-right {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .colored-line {
+    width: 12%;
+}
+
+  .section-wrapper {
+    min-height: 60em;
+  }
+
+  /* TITLES */
+
+  .secondary-title {
+    padding-left: 10%;
+    padding-right: 0%;
+    width: 85%;
+  }
+
+  /* SMALL DEVICE CLIENT SECTION */
+
+  .client-logo {
+    padding: 3% 8%;
+    width: 100%;
+  }
+
+  #client-title {
+    padding-top: 0.7em;
+    padding-bottom: 0.8em;
+  }
+
+  /* LOWER RES MEDIUM DEVICES SERVICES PAGE */
+
+  .info-container{
+    min-height: 20em;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .info-container-left {
+    padding-bottom: 3em;
+    padding-left: 3%;
+    padding-right: 3%;
+    z-index: 0;
+  }
+
+  .info-container-right {
+    padding-left: 3%;
+    padding-right: 3%;
+    z-index: 0;
+  }
+
+  #services-header {
+    height: 330px;
+  }
+
+  .service-title-left {
+    margin-left: 0;
+    padding-left: 2%;
+    margin-top: 0;
+    width: 97%;
+  }
+
+  .service-title-right {
+    float: left;
+    margin-left: 0;
+    padding-left: 2%;
+    margin-top: 0;
+    width: 97%;
+  }
+
+  .title-adjust-1 {
+    right: 0em;
+  }
+
+  .title-adjust-2 {
+    width: 97%;
+  }
+
+  img.service-img {
+    aspect-ratio: 16/10;
+    border-radius: 0em;
+    width: 100%;
+  }
+
+  .service-img-col {
+    order: 1;
+  }
+
+  .service-info-col {
+    display: flex;
+    align-items: start;
+    order: 2;
+  }
+
+  .service-info-left {
+    font-size: large;
+    margin-top: .5em;
+    min-height: calc(80% + 90px);
+    width: 100%;
+    z-index: 0;
+  }
+
+  .service-info-right {
+    font-size: large;
+    margin-top: .5em;
+    min-height: calc(100% + 90px);
+    width: 100%;
+    z-index: 0;
+  }  
+}
 
 /* SMALL DEVICES (landscape phones, 576px and up) */
 
 @media (max-width: 575px) { 
+
+  .colored-line {
+    width: 15%;
+}
 
   .image-col {
     display: block;
     margin-top: 100%;
   }
 
+  .section-wrapper {
+    min-height: 46em;
+  }
+
   /* SMALL DEVICE HEADER */
 
   #home-logo {
     padding-left: 0em;
-  }
-
-
-  /* SMALL DEVICE CLIENT SECTION */
-
-  .client-logo {
-    padding: 3%;
-    width: 100%;
   }
 
   /* SMALL DEVICE CONTACT US PAGE */
@@ -955,13 +1115,11 @@ div.admin-card {
     font-size: 1.3em;
     margin-left: 5%;
     padding: 1.8%;
-    text-align: center;
     width: 90%;
   }
 
   .footer-col {
     padding: 1% 8% 1% 0;
-    text-align: center;
   }
 
   #footer-contact-us-title {
@@ -984,21 +1142,26 @@ div.admin-card {
 
   #footer-social-media {
     display: none;
-    text-align: center;
   }
 
   .footer-text {
     padding-top: 1.2em;
-    text-align: center;
   }
 
   .footer-title {
-    padding-left: 5.5%;
+    padding-left: 1%;
   }
   
 }
 
 @media (max-width: 400px) {
+
+  /* EXTRA SMALL DEVICE TITLES */
+
+  .secondary-title {
+    padding-left: 15%;
+  }
+
 
   .card-title {
     padding-bottom: 0.01em;
@@ -1020,8 +1183,8 @@ div.admin-card {
   /* EXTRA SMALL DEVICE FOOTER */
 
   img#footer-img {
-    height: 4.4em;
-    width: 15em;
+    height: 2.8em;
+    width: 8em;
   }
 
   li.list-unstyled {
@@ -1036,8 +1199,24 @@ div.admin-card {
     font-size: 1.4em;
   }
 
+  .footer-col {
+    padding-left: .6em;
+  }
+
+  .footer-col-left {
+    text-align: left;
+  }
+
+  #footer-contact-us-title {
+    padding-left: 1em;
+  }
+
   .footer-link {
     font-size: 1.2em;
+  }
+
+  #footer-logo {
+    justify-content: flex-start;
   }
 
   .footer-text {
@@ -1046,8 +1225,15 @@ div.admin-card {
 
   .footer-title {
     font-size: 1.4em;
-    padding-left: 2em;
-    text-align: center;
+    padding-left: 1.2em;
+  }
+
+  #lg-device-socials {
+    justify-content: flex-start;
+  }
+
+  .lg-device-socials-icon {
+    padding-left: 0;
   }
 }
 
