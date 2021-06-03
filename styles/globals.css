@@ -121,13 +121,18 @@ div.col {
 }
 
 #header.color-change {
-  background-color: #313033;
+  background-color: #666567;
   transition: background-color 250ms linear;
   width: 100%;
 }
 
 #home-logo {
   padding: 1.2em 0 1.2em 2em;
+}
+
+#site-logo {
+  aspect-ratio: 388/95;
+  width: 9.8em;
 }
 
 #sm-devices-nav {
@@ -263,7 +268,7 @@ ul.navbar-nav {
 }
 
 #landing-page-text {
-   color: #3b3b3b;
+   color: #3866b3;
    display: flex;
    justify-content: center;
    margin-left: 14%;
@@ -280,7 +285,7 @@ ul.navbar-nav {
 }
 
 #main-landing-page-text {
-  color: #3b3b3b;
+  color: #2b4474;
   margin-left: 14%;
 }
 
@@ -482,9 +487,9 @@ div.admin-card {
   font-size: x-large;
   margin: 60px 0;
   min-height: 65%;
-  margin-bottom: 50px;
+  margin-bottom: 50px; 
   text-align: center;
-  width: 60%;
+  width: 90%;
 }
 
 .admin-card-text {
@@ -530,6 +535,10 @@ div.admin-card {
   width: 50%;
 }
 
+img.MuiCardMedia-img {
+  height: 9.1em;
+}
+
 /* FOOTER */
 
 #footer {
@@ -556,8 +565,8 @@ div.admin-card {
 }
 
 #footer-img {
+  aspect-ratio: 388/95;
   width: 200px; 
-  height: 58px;
 }
 
 #footer-logo {

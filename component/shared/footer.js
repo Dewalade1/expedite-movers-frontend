@@ -20,7 +20,7 @@ export default function Footer () {
         <Row className="" id="footer-top">
           <Col className="footer-col-left" md={12} lg={5} xl={4}>
             <div id="footer-logo">
-              <img src="https://res.cloudinary.com/hellodewa/image/upload/v1616559517/Moviecritics/images/logos/moviecritics-logo-transparent-background_sjnfhk.png" id="footer-img" alt="sitelogo" />
+              <img src="https://res.cloudinary.com/hellodewa/image/upload/v1622718567/expeditemovers/images/logos/main_nav_logo_greyscale_m92pms.png" id="footer-img" alt="site logo" />
             </div>
             <div id="lg-device-socials">
               <Link href="#">

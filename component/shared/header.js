@@ -33,7 +33,7 @@ export default function Header({onHomePage}) {
       <nav className={colorChange || !closeNav ? "navbar navbar-expand-md color-change" : "navbar navbar-expand-md"} id="header">
         <Col xs={6} sm={6} md={3} id="home-logo">
           <a className="navbar-brand ml-4" href="#">
-            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1616559517/Moviecritics/images/logos/moviecritics-logo-transparent-background_sjnfhk.png" width={180} height={50} alt="sitelogo" />
+            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1616559517/expeditemovers/images/logos/main_nav_logo_iotyev.png" alt="sitelogo" id="site-logo"/>
           </a>
         </Col>
         <Col xs={3} sm={3} md={9} id="large-devices-nav">
