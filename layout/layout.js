@@ -5,9 +5,36 @@ import Head from 'next/head';
 import Header from "../component/shared/header";
 import Footer from '../component/shared/footer';
 
-import Drift from "react-driftjs";
-
 export default function Layout ({ children, onHomePage }) {
+
+  const DriftSetup = () => {
+    // Start of Async Drift Code
+    "use strict";
+
+    !function() {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+          t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+          t.factory = function(e) {
+            return function() {
+              var n = Array.prototype.slice.call(arguments);
+                return n.unshift(e), t.push(n), t;
+            };
+          }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+        var i = document.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(o, i);
+        };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('xknu6i2fhwk2');
+    // End of Async Drift Code
+  }
 
     return (
       <>
@@ -45,11 +72,11 @@ export default function Layout ({ children, onHomePage }) {
           <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
           <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossOrigin="anonymous"></script>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossOrigin="anonymous"></script>
+          <script>{DriftSetup()}</script>
         </Head>
 
         <Header onHomePage={onHomePage} />
         <main>{children}</main>
-        <Drift appId="drift.me/info9395" />;
         <Footer />
       </>
     );
