@@ -1,17 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import Head from 'next/head';
 
 import Header from "../component/shared/header";
 import Footer from '../component/shared/footer';
 
-export default function Layout ({children, onHomePage, onLocationPage}) {
+import Drift from "react-driftjs";
+
+export default function Layout ({ children, onHomePage }) {
 
     return (
       <>
         <Head>
-          <title>Home | Expedite Movers Ltd.</title>
-
           <meta charSet="utf-8" />
           <meta name="author" content="Ade-Onojobi Oluwadewalade" />
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
@@ -49,6 +49,7 @@ export default function Layout ({children, onHomePage, onLocationPage}) {
 
         <Header onHomePage={onHomePage} />
         <main>{children}</main>
+        <Drift appId="drift.me/info9395" />;
         <Footer />
       </>
     );

@@ -1,12 +1,20 @@
 import React from 'react';
 
+import Head from 'next/head';
+
 import Layout from '../layout/layout';
 import ClientContent from "../component/contents/clientContent";
 import ServicesContent from '../component/contents/servicesContent';
 
 export default function Services () {
+
+  const pagetitle = "Services";
+
     return (
       <Layout>
+        <Head>
+          <title>{`${pagetitle} | Expedite Movers Ltd.`}</title>
+        </Head>
         <header className="align-items-origin" id="services-header">
           <div>
             <h2 className="primary-title">

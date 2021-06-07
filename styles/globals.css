@@ -126,6 +126,10 @@ div.col {
   width: 100%;
 }
 
+#header.color-change-light {
+  background-color: #eeeeee !important;
+}
+
 #home-logo {
   padding: 1.2em 0 1.2em 2em;
 }
@@ -1329,6 +1333,12 @@ img.MuiCardMedia-img {
   .card-title {
     padding-bottom: 0.01em;
     margin-bottom: 0;
+  }
+
+  /* LOWER RES EXTRA SMALL DEVICE HOME PAGE */
+
+  #landing-page-col-1 {
+    padding: 2%;
   }
 
   /* LOWER RES EXTRA SMALL DEVICE LOCATION PAGE */

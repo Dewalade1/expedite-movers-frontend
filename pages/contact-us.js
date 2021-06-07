@@ -113,3 +113,5 @@ export default function Contact () {
       </Layout>
     );
 }
+
+export const pageName = "Contact Us";

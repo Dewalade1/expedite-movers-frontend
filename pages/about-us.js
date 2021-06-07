@@ -1,11 +1,19 @@
 import React from 'react';
 
+import Head from 'next/head';
+
 import Layout from '../layout/layout';
 import ClientContent from "../component/contents/clientContent";
 
 export default function AboutUs () {
+
+  const pagetitle = "About Us";
+
     return (
       <Layout>
+        <Head>
+          <title>{`${pagetitle} | Expedite Movers Ltd.`}</title>
+        </Head>
         <header className="align-items-origin" id="about-us-header">
           <div>
             <h2 className="primary-title">

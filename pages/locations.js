@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Row, Col } from "react-bootstrap";
 
+import Head from 'next/head';
 import Link from 'next/Link';
 
 import Layout from '../layout/layout';
@@ -17,8 +18,14 @@ import PhoneOutlinedIcon from "@material-ui/icons/PhoneOutlined";
 import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
 
 export default function Locations () {
+
+    const pagetitle = "Locations";
+
     return (
       <Layout>
+        <Head>
+          <title>{`${pagetitle} | Expedite Movers Ltd.`}</title>
+        </Head>
         <header className="align-items-origin" id="location-header">
           <div>
             <h2 className="primary-title">
