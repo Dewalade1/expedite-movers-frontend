@@ -6,7 +6,7 @@ import { Col } from "react-bootstrap";
 
 let _ = require("lodash");
 
-export default function Header({onHomePage}) {
+export default function NavBar({onHomePage}) {
 
   const [closeNav, setCloseNav] = useState(true);
   const [colorChange, setColorChange] = useState(false);
@@ -54,10 +54,10 @@ export default function Header({onHomePage}) {
         </Col>
         <Col xs={6} sm={6} md={9} id="sm-devices-nav">
           <div id="sm-nav-btn" onClick={() => setCloseNav(!closeNav)} className={closeNav ? "nav-visible" : "nav-hidden"}>
-            <i className="fas fa-bars 3x"></i>
+            <i className="fas fa-bars 2x"></i>
           </div>
           <div id="sm-nav-btn" onClick={() => setCloseNav(!closeNav)} className={!closeNav ? "nav-visible" : "nav-hidden"}>
-            <i class="fas fa-times 3x"></i>
+            <i class="fas fa-times 2x"></i>
           </div>
         </Col>
         <div className={!closeNav ? "nav-visible sm-devices-nav-list" : "nav-hidden"}>

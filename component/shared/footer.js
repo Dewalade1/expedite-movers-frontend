@@ -190,13 +190,15 @@ export default function Footer () {
             </span>
             <span className="footer-bottom-divider">| </span>
             <span className="footer-bottom-info">
-              Character vector created by{" "}
-              <a href="https://www.freepik.com/vectors/character" className="footer-link">
-                vectorjuice - www.freepik.com
-              </a>{" "}
+              Character vectors found on {" "}
+                <a href="https://www.freepik.com/" className="footer-link">
+                  Freepik - www.freepik.com
+                </a>{" "}
             </span>
             <span className="footer-bottom-divider">|</span>
             <span className="footer-bottom-info"> Made in Lagos, Nigeria </span>
+            <br/>
+            <span className="footer-bottom-info">All photos, vectors, trademarks, service marks, trade names, product names, logos and trade dress appearing on our website are the property of their respective owners.</span>
           </h6>
         </Row>
       </footer>

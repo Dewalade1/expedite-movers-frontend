@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 
 import Head from 'next/head';
 
-import Header from "../component/shared/header";
+import NavBar from "../component/shared/headNavbar";
 import Footer from '../component/shared/footer';
 
 export default function Layout ({ children, onHomePage }) {
@@ -75,7 +75,7 @@ export default function Layout ({ children, onHomePage }) {
           <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet" />
         </Head>
 
-        <Header onHomePage={onHomePage} />
+        <NavBar onHomePage={onHomePage} />
         <main>{children}</main>
         <Footer />
       </>
