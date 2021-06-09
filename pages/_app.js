@@ -3,9 +3,8 @@ import '../styles/globals.css'
 function MyApp({ Component, pageProps }) {
   return (
     <>
-  {typeof window !== "undefined" ?
-    <Component {...pageProps} /> : ""}
-  </>
+      {typeof window !== "undefined" ? <Component {...pageProps} /> : ""}
+    </>
   )
 }
 

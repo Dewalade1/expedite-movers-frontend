@@ -14,7 +14,7 @@ export default function ServicesContent ({onHomePage}) {
 
         <Row className="section-wrapper black-bg-layout">
           <Col sm={12} md={6} className="align-items-left service-img-col">
-            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1621628660/expeditemovers/images/sys/distribution_and_haulage_img_jyijyk.jpg" className="service-img" />
+            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1623238300/expeditemovers/images/sys/distribution-pic_b9ur41.jpg" className="service-img" />
           </Col>
           <Col sm={12} md={6} className="align-items-right service-info-col">
             <div className="info-container info-container-right">
@@ -35,12 +35,12 @@ export default function ServicesContent ({onHomePage}) {
             </div>
           </Col>
           <Col sm={12} md={6} className="align-items-right service-img-col">
-            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1621638438/expeditemovers/images/sys/air-land-and-sea-freight-img_hbybta.jpg" className="service-img" />
+            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1623238301/expeditemovers/images/sys/air-land-sea-frieght_nwgyma.jpg" className="service-img" />
           </Col>
         </Row>
         <Row className="section-wrapper black-bg-layout">
           <Col sm={12} md={6} className="align-items-left service-img-col">
-            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1621639615/expeditemovers/images/sys/distribution-img_jxc3dd.jpg" className="service-img" />
+            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1623238311/expeditemovers/images/sys/cold-chain-distribution-img_wf37g6.jpg" className="service-img" />
           </Col>
           <Col sm={12} md={6} className="align-items-right service-info-col">
             <div className="info-container info-container-right">
@@ -61,12 +61,12 @@ export default function ServicesContent ({onHomePage}) {
             </div>
           </Col>
           <Col sm={12} md={6} className="align-items-right service-img-col">
-            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1621639727/expeditemovers/images/sys/customs-clearance-img_leldhv.jpg" className="service-img" />
+            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1623238289/expeditemovers/images/sys/delivery-pic-2_ghyh4r.jpg" className="service-img" />
           </Col>
         </Row>
         <Row className="section-wrapper black-bg-layout">
           <Col sm={12} md={6} className="align-items-left service-img-col">
-            <img src="https://res.cloudinary.com/hellodewa/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1621629307/expeditemovers/images/sys/warehousing_74855-10158_cjgmqi.jpg" className="service-img" />
+            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1623238294/expeditemovers/images/sys/warehousing-imgs_dtmcdl.jpg" className="service-img" />
           </Col>
           <Col sm={12} md={6} className="align-items-right service-info-col">
             <div className="info-container info-container-right">
@@ -87,7 +87,7 @@ export default function ServicesContent ({onHomePage}) {
             </div>
           </Col>
           <Col sm={12} md={6} className="align-items-right service-img-col">
-            <img src="https://res.cloudinary.com/hellodewa/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1621629300/expeditemovers/images/sys/packing_and_removal_section_52683-45397_xmskvt.jpg" className="service-img" />
+            <img src="https://res.cloudinary.com/hellodewa/image/upload/v1623238306/expeditemovers/images/sys/packing-and-removal-img_cailei.jpg" className="service-img" />
           </Col>
         </Row>
       </>

@@ -165,7 +165,7 @@ ul.navbar-nav {
 }
 
 .my-nav-link {
-  color: #428af7;
+  color: #77a7ee;
   position: relative;
   text-decoration: none;
 }
@@ -177,14 +177,14 @@ ul.navbar-nav {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #90bafa;
+  background-color: #428af7;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
 
 .my-nav-link:hover {
-  color: #90bafa;
+  color:  #428af7;
 }
 
 .my-nav-link:hover::before {
@@ -193,7 +193,7 @@ ul.navbar-nav {
 }
 
 .home-nav-link {
-  color: #428af7;
+  color: #77a7ee;
   position: relative;
   text-decoration: none;
 }
@@ -205,14 +205,14 @@ ul.navbar-nav {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #90bafa;
+  background-color:  #428af7;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
 
 .home-nav-link:hover {
-  color: #90bafa;
+  color:  #428af7;
 }
 
 .home-nav-link:hover::before {
@@ -318,8 +318,8 @@ ul.navbar-nav {
 #services-header {
   background-attachment: fixed;
   background-color: #0d86be;
-  background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1621646636/expeditemovers/images/sys/services-title-background_zh6ckz.jpg");
-  background-position: top;
+  background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1623241379/expeditemovers/images/sys/sevices-img_qjx4qb.jpg");
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   height: 370px;
@@ -431,11 +431,11 @@ div.location-card {
 /* ABOUT US PAGE */
 
 #about-us-header {
-  background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1621646264/expeditemovers/images/sys/about-us_background_odjflx.jpg");
+  background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1623242515/expeditemovers/images/sys/about-us-img_bcpe4i.jpg");
   background-color: #0d86be;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   height: 370px;
   opacity: 95%;
@@ -521,7 +521,7 @@ div.admin-card {
 
 #admin-header {
   align-items: center;
-  background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1621804935/expeditemovers/images/sys/admin-header-background_kz7cz1.jpg');
+  background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1623240335/expeditemovers/images/sys/admin-img_rczxaq.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;

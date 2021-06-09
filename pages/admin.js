@@ -69,7 +69,7 @@ export default function Admin () {
               </b>
               <CardContent>
                 <p className="admin-card-text"> Login to your Drift account here </p>
-                <Button className="button-layout" variant="contained" color="primary" size="large" disableElevation fullWidth>
+                <Button href="https://start.drift.com/login" className="button-layout" variant="contained" color="primary" size="large" disableElevation fullWidth>
                   {" "}
                   Access Email{" "}
                 </Button>
