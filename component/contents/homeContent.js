@@ -16,7 +16,7 @@ export default function HomeContent () {
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6} className="align-items-origin">
             <div className="align-items-origin">
-              <img src="https://res.cloudinary.com/hellodewa/image/upload/v1620740618/expeditemovers/images/sys/landing-page-img_caukdo.png" id="landing-page-img" />
+              <img src="https://res.cloudinary.com/hellodewa/image/upload/v1623324252/expeditemovers/images/sys/landing-page-img_jadbkq.png" id="landing-page-img" />
             </div>
           </Col>
         </Row>
