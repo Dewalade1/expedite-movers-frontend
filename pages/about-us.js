@@ -4,6 +4,7 @@ import Head from 'next/head';
 
 import Layout from '../layout/layout';
 import ClientContent from "../component/contents/clientContent";
+import AboutUsContent from "../component/contents/aboutUsContent";
 
 export default function AboutUs () {
 
@@ -23,6 +24,7 @@ export default function AboutUs () {
             <h5 className="secondary-title">Who we are</h5>
           </div>
         </header>
+        <AboutUsContent />
         <ClientContent />
       </Layout>
     );

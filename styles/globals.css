@@ -430,6 +430,10 @@ div.location-card {
 
 /* ABOUT US PAGE */
 
+.about-us-container {
+  padding: 7em 0;
+}
+
 #about-us-header {
   background-image: url("https://res.cloudinary.com/hellodewa/image/upload/v1623242515/expeditemovers/images/sys/about-us-img_bcpe4i.jpg");
   background-color: #0d86be;
@@ -439,6 +443,26 @@ div.location-card {
   background-size: cover;
   height: 370px;
   opacity: 95%;
+}
+
+.about-us-img {
+  aspect-ratio: 4/3;
+  border-radius: 0.2em;
+  width: 50vw;
+}
+
+.about-us-info {
+  padding: 0 10vw 0 1.5vw;
+  border-left: 5px solid #005881;
+  margin-left: 9vw;
+}
+
+.about-us-img-inverted {
+  order: 0;
+}
+
+.about-us-info-inverted {
+  order: 1;
 }
 
 
