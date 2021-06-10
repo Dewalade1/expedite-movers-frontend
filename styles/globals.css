@@ -578,9 +578,15 @@ img.MuiCardMedia-img {
 
 #footer-bottom {
   background: #0b47a0;
+  display: flex;
   color: #77a7ee;
   justify-content: center;
   padding: 2.5em 0;
+}
+
+.footer-bottom-container {
+  text-align: center;
+  padding: .5em 10vw;
 }
 
 .footer-col-left {
@@ -674,7 +680,7 @@ img.MuiCardMedia-img {
 
 /* LARGE DEVICES ( desktops, less than 1300px) */
 
-@media (max-width: 1299.98px) { 
+@media only screen and (max-width: 1299.98px) { 
 
   .colored-line {
     width: 7%;
@@ -794,7 +800,7 @@ img.MuiCardMedia-img {
 
 /* MEDIUM DEVICES (tablets, less than 992px) */
 
-@media (max-width: 991.98px) { 
+@media only screen and (max-width: 991.98px) { 
 
   .section-wrapper {
     min-height: 500px;
@@ -966,9 +972,9 @@ img.MuiCardMedia-img {
 
 }
 
-/* SMALL DEVICES (landscape phones, 576px and up) */
+/* SMALL DEVICES (landscape phones, 768px and below) */
 
-@media (max-width: 767.5px) {
+@media only screen and (max-width: 767.5px) {
 
   div.row {
     padding: 0;
@@ -1221,7 +1227,7 @@ img.MuiCardMedia-img {
 
 /* EXTRA SMALL DEVICES (portrait phones, less than 576px) */
 
-@media (max-width: 575px) { 
+@media only screen and (max-width: 575px) { 
 
   .colored-line {
     width: 15%;
@@ -1308,7 +1314,7 @@ img.MuiCardMedia-img {
   }
 
   .footer-col {
-    padding: 1% 8% 1% 0;
+    padding: 1% 8% 1% 4%;
   }
 
   #footer-contact-us-title {
@@ -1338,14 +1344,14 @@ img.MuiCardMedia-img {
   }
 
   .footer-title {
-    padding-left: 1%;
+    padding-left: 6.6%;
   }
   
 }
 
 /* LOWER RES EXTRA SMALL DEVICES */
 
-@media (max-width: 400px) {
+@media only screen and (max-width: 400px) {
 
   /* LOWER RES EXTRA SMALL DEVICE TITLES */
 
@@ -1436,7 +1442,7 @@ img.MuiCardMedia-img {
 
 /* FOLD DEVICES (Samsung Galaxy Folds) */
 
-@media (max-width: 290px) {
+@media only screen and (max-width: 290px) {
 
   .card-title {
     padding-bottom: 0.01em;

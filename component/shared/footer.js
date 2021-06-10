@@ -180,7 +180,7 @@ export default function Footer () {
           </Col>
         </Row>
         <Row id="footer-bottom">
-          <h6>
+          <h6 className="footer-bottom-container">
             <span className="footer-bottom-info">
               &copy; {new Date().getFullYear()}
               {"    "}
@@ -197,8 +197,9 @@ export default function Footer () {
             </span>
             <span className="footer-bottom-divider">|</span>
             <span className="footer-bottom-info"> Made in Lagos, Nigeria </span>
-            <br/>
-            <span className="footer-bottom-info">All photos, vectors, trademarks, service marks, trade names, product names, logos and trade dress appearing on our website are the property of their respective owners.</span>
+          </h6>
+          <h6 className="footer-bottom-container">
+            <div className="footer-bottom-info">All photos, vectors, trademarks, service marks, trade names, product names, logos and trade dress appearing on our website are the property of their respective owners.</div>
           </h6>
         </Row>
       </footer>
