@@ -1077,7 +1077,7 @@ img.MuiCardMedia-img {
   #sm-nav-btn {
     color: #0d54be;
     height: 100%;
-    padding: 5% 8%;
+    padding: 5% 11%;
     width: 30%;
   }
 
@@ -1103,7 +1103,7 @@ img.MuiCardMedia-img {
   /* SMALL DEVICE HOME PAGE */
 
   #home-overlay {
-    height: 720px;
+    min-height: 940px;
   }
 
   #landing-page-col-1 {
@@ -1115,7 +1115,9 @@ img.MuiCardMedia-img {
   }
 
   #landing-page-wrapper {
-    height: 720px;
+    background-attachment: scroll;
+    background-image:url('https://res.cloudinary.com/hellodewa/image/upload/v1621808700/expeditemovers/images/sys/home-background_ndiycv.jpg');
+    min-height: 940px;
   }
 
   /* SMALL DEVICE CLIENT SECTION */
@@ -1217,6 +1219,35 @@ img.MuiCardMedia-img {
     width: 100%;
     z-index: 0;
   }  
+
+  /* LOWER RES MEDIUM DEVICES ABOUT US PAGE */
+
+  .about-us-container {
+    min-height: 60em;
+    width: 100vw;
+    z-index: 0;
+  }
+
+  .about-us-img-container {
+    display: block;
+    position: relative;
+    top: 0;
+    order: 0;
+    width: 100%;
+  }
+
+  img.about-us-img {
+    border-radius: 0em;
+    width: 100%;
+  }
+
+  .about-us-info {
+    bottom: 0;
+    display: block;
+    position: relative;
+    order: 1;
+    width: 100vw;
+  }
 
   /* LOWER RES MEDIUM DEVICES ADMIN PAGE */
 
