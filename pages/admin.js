@@ -37,7 +37,7 @@ export default function Admin () {
               </b>
               <CardContent>
                 <p className="admin-card-text">View and edit your Databases Here</p>
-                <Button className="button-layout" variant="contained" color="primary" size="large" disableElevation fullWidth>
+                <Button href="" className="button-layout" variant="contained" color="primary" size="large" disableElevation fullWidth>
                   {" "}
                   Go to Database{" "}
                 </Button>
@@ -53,7 +53,7 @@ export default function Admin () {
               </b>
               <CardContent>
                 <p className="admin-card-text"> View and send your Emails here </p>
-                <Button className="button-layout" variant="contained" color="primary" size="large" disableElevation fullWidth>
+                <Button href="" className="button-layout" variant="contained" color="primary" size="large" disableElevation fullWidth>
                   {" "}
                   Access Email{" "}
                 </Button>
@@ -69,9 +69,9 @@ export default function Admin () {
               </b>
               <CardContent>
                 <p className="admin-card-text"> Login to your Drift account here </p>
-                <Button href="https://start.drift.com/login" className="button-layout" variant="contained" color="primary" size="large" disableElevation fullWidth>
+                <Button href="https://app.drift.com/" className="button-layout" variant="contained" color="primary" size="large" disableElevation fullWidth>
                   {" "}
-                  Access Email{" "}
+                  Access Drift{" "}
                 </Button>
               </CardContent>
             </Card>
