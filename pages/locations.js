@@ -3,7 +3,7 @@ import React from 'react';
 import { Row, Col } from "react-bootstrap";
 
 import Head from 'next/head';
-import Link from 'next/Link';
+import Link from 'next/link';
 
 import Layout from '../layout/layout';
 
