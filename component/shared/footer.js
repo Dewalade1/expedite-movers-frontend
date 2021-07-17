@@ -23,22 +23,22 @@ export default function Footer () {
               <img src="https://res.cloudinary.com/hellodewa/image/upload/v1622718567/expeditemovers/images/logos/main_nav_logo_greyscale_m92pms.png" id="footer-img" alt="site logo" />
             </div>
             <div id="lg-device-socials">
-              <Link href="#">
+              <Link href="#" key={'facebook'}>
                 <a className="lg-device-socials-icon">
                   <FacebookIcon fontSize="large" />
                 </a>
               </Link>
-              <Link href="#">
+              <Link href="#" key={'twitter'}>
                 <a className="lg-device-socials-icon">
                   <TwitterIcon fontSize="large" />
                 </a>
               </Link>
-              <Link href="#">
+              <Link href="#" key={'instagram'}>
                 <a className="lg-device-socials-icon">
                   <InstagramIcon fontSize="large" />
                 </a>
               </Link>
-              <Link href="#">
+              <Link href="#"  key={'linkedIn'}>
                 <a className="lg-device-socials-icon">
                   <LinkedInIcon fontSize="large" />
                 </a>
@@ -51,7 +51,7 @@ export default function Footer () {
               <h5 className="footer-title">Site Map</h5>
             </b>
             <ul id="site-map-list">
-              <li className="list-unstyled">
+              <li className="list-unstyled" key='home'>
                 <Link href="/">
                   <a>
                     <h6 className="footer-link">
@@ -60,7 +60,7 @@ export default function Footer () {
                   </a>
                 </Link>
               </li>
-              <li className="list-unstyled">
+              <li className="list-unstyled" key='services'>
                 <Link href="/services">
                   <a>
                     <h6 className="footer-link">
@@ -69,7 +69,7 @@ export default function Footer () {
                   </a>
                 </Link>
               </li>
-              <li className="list-unstyled">
+              <li className="list-unstyled" key='about'>
                 <Link href="/about">
                   <a>
                     <h6 className="footer-link">
@@ -78,7 +78,7 @@ export default function Footer () {
                   </a>
                 </Link>
               </li>
-              <li className="list-unstyled">
+              <li className="list-unstyled" key='contact'>
                 <Link href="/contact">
                   <a>
                     <h6 className="footer-link">
@@ -87,7 +87,7 @@ export default function Footer () {
                   </a>
                 </Link>
               </li>
-              <li className="list-unstyled">
+              <li className="list-unstyled" key='locations'>
                 <Link href="/locations">
                   <a>
                     <h6 className="footer-link">
@@ -103,7 +103,7 @@ export default function Footer () {
               <h5 className="footer-title">Our social Media</h5>
             </b>
             <ul>
-              <li className="list-unstyled">
+              <li className="list-unstyled"  key='facebook-desktop'>
                 <Link href="#">
                   <a>
                     <h5 className="footer-link">
@@ -112,7 +112,7 @@ export default function Footer () {
                   </a>
                 </Link>
               </li>
-              <li className="list-unstyled">
+              <li className="list-unstyled" key='twitter-desktop'>
                 <Link href="#">
                   <a>
                     <h5 className="footer-link">
@@ -121,7 +121,7 @@ export default function Footer () {
                   </a>
                 </Link>
               </li>
-              <li className="list-unstyled">
+              <li className="list-unstyled"  key='instagram-desktop'>
                 <Link href="#">
                   <a>
                     <h5 className="footer-link">
@@ -130,7 +130,7 @@ export default function Footer () {
                   </a>
                 </Link>
               </li>
-              <li className="list-unstyled">
+              <li className="list-unstyled"  key='linkedIn-desktop'>
                 <Link href="#">
                   <a>
                     <h5 className="footer-link">
@@ -145,7 +145,7 @@ export default function Footer () {
             <h5 className="footer-title" id="footer-contact-us-title">
               Contact Us
             </h5>
-            <Link href="tel:+2348023062321">
+            <Link href="tel:+2348023062321" key='phone'>
               <a>
                 <h5 className="footer-link">
                   <PhoneIcon className="contact-icon" />
@@ -153,7 +153,7 @@ export default function Footer () {
                 </h5>
               </a>
             </Link>
-            <Link href="tel:+2347065156145">
+            <Link href="tel:+2347065156145"  key="alt-phone">
               <a>
                 <h5 className="footer-link">
                   <PhoneOutlinedIcon className="contact-icon" />
@@ -161,19 +161,19 @@ export default function Footer () {
                 </h5>
               </a>
             </Link>
-            <Link href="mailto:info@expeditemoversng.com">
+            <Link href="mailto:contact@expeditemoversng.com"  key="mail">
               <a>
                 <h5 className="footer-link">
                   <MailOutlineIcon className="contact-icon" />
-                  info@expeditemoversng.com
+                  contact@expeditemoversng.com
                 </h5>
               </a>
             </Link>
-            <Link href="mailto:expeditemovers@gmail.com">
+            <Link href="mailto:info@expeditemoversng.com"  key="alt-mail">
               <a>
                 <h5 className="footer-link">
                   <AlternateEmailIcon className="contact-icon" />
-                  expeditemovers@gmail.com
+                  info@expeditemoversng.com
                 </h5>
               </a>
             </Link>
@@ -185,12 +185,12 @@ export default function Footer () {
               &copy; {new Date().getFullYear()}
               {"    "}
               <Link href="#">
-                <a className="footer-link"> helloDewa </a>
+                <a className="footer-link"> Dewa </a>
               </Link>
             </span>
             <span className="footer-bottom-divider">| </span>
             <span className="footer-bottom-info">
-              Character vectors found on {" "}
+              Character vectors were found on {" "}
                 <a href="https://www.freepik.com/" className="footer-link">
                   Freepik - www.freepik.com
                 </a>{" "}
