@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 export default function ServicesContent ({onHomePage}) {
     return (
@@ -21,7 +21,7 @@ export default function ServicesContent ({onHomePage}) {
               <h1 className="service-title-right">
                 <b>Distribution and Haulage</b>
               </h1>
-              <div className="service-info-right">We provide you with quality and on-time distrobution</div>
+              <div className="service-info-right">We are committed to providing high quality haulage and distribution services through our dependable, effective and committed team.</div>
             </div>
           </Col>
         </Row>
@@ -31,7 +31,7 @@ export default function ServicesContent ({onHomePage}) {
               <h1 className="service-title-left">
                 <b>Air, Sea and Land Freight</b>
               </h1>
-              <div className="service-info-left">We provide you with quality and on-time distrobution</div>
+              <div className="service-info-left">We offer land freight services using safe, innovative fleet and deep-rooted delivery networks across the globe. We can transport freight of practically any size, shape and type.</div>
             </div>
           </Col>
           <Col sm={12} md={6} className="align-items-right service-img-col">
@@ -47,7 +47,7 @@ export default function ServicesContent ({onHomePage}) {
               <h1 className="service-title-right title-adjust-1">
                 <b>Cold Chain Distributions</b>
               </h1>
-              <div className="service-info-right">We provide you with quality and on-time distrobution</div>
+              <div className="service-info-right">Using our fleet of cold-chain trucks, We provide you with quality and on-time distribution of your cold-chain goods well preserved and in good condition</div>
             </div>
           </Col>
         </Row>
@@ -57,7 +57,7 @@ export default function ServicesContent ({onHomePage}) {
               <h1 className="service-title-left">
                 <b>Customs Clearance and Delivery</b>
               </h1>
-              <div className="service-info-left">We provide you with quality and on-time distrobution</div>
+              <div className="service-info-left">We are known for preparation and tendering of documentations obligatory to simplify export or imports into the country. we represent our clients in customs examination, valuation, payment of duty and delivery of cargo to customs after clearance along with documents.</div>
             </div>
           </Col>
           <Col sm={12} md={6} className="align-items-right service-img-col">
@@ -73,7 +73,7 @@ export default function ServicesContent ({onHomePage}) {
               <h1 className="service-title-right title-adjust-2">
                 <b>Warehousing</b>
               </h1>
-              <div className="service-info-right">We provide you with quality and on-time distrobution</div>
+              <div className="service-info-right">We are partnered with several warehouses who provide storage services for good that have been cleared for delivery ensuring that your goods are safely stored between the periods of clearance and delivery.</div>
             </div>
           </Col>
         </Row>
@@ -83,7 +83,7 @@ export default function ServicesContent ({onHomePage}) {
               <h1 className="service-title-left">
                 <b>Packing and Removal/Relocation</b>
               </h1>
-              <div className="service-info-left">We provide you with quality and on-time distrobution</div>
+              <div className="service-info-left">We deliver reliable, cost effective, punctual and timely home and office relocation services. Whether you need International Relocation or a Domestic Move, our dedicated staff are on hand to support you.</div>
             </div>
           </Col>
           <Col sm={12} md={6} className="align-items-right service-img-col">
