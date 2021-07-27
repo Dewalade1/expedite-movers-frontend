@@ -17,38 +17,88 @@
 ![license](https://img.shields.io/github/license/Dewalade1/expedite-movers-frontend?style=for-the-badge)
 ![environments](https://img.shields.io/badge/environments%20-2-yellowgreen?style=for-the-badge)
 
-![expeditemovers-logo](https://res.cloudinary.com/hellodewa/image/upload/v1616559517/expeditemovers/images/logos/main_nav_logo_iotyev.png)
-
 # Expeditemovers Ltd. Official Website
 
 This is the repo of the official website of Expeditemovers Ltd.
 
-## Links
+## Tools used
 
-### Main site
+* [ReactJS](https://reactjs.org) - to build the app
+* [NextJS](https://nextjs.org) - for preview and production deployment
+* [Vercel](https://vercel.com) - for hosting the app
+* [Git and GitHub](https://git-scm.com) - for tracking, storage and version control
 
-* [Click to go to main site](https://expeditemoversng.com)
+## How to setup the app
 
-### Production envs 
+### Option 1
 
-* [1st production env](https://expeditemoversng.netlify.app/)
-* [2nd production env](https://expeditemoversng.vercel.app/)
+* The app has been setup and deployed on [Vercel](https://vercel.com)
 
-### Dev environments
+### Option 2
 
-* [1st dev env](https://60e60ebf5e91240008db77e6--expeditemoversng.netlify.app/)
-* [2nd dev env](https://expeditemoversng-dewa.vercel.app/)
-* [3rd dev env](https://expeditemoversng-11pjobd7p-dewa.vercel.app)
+Alternatively, you can do the following to setup the app locally. Run the commands below in your terminal or CMD:
+
+1 Clone the repo using this command
+```
+git clone https://github.com/Dewalade1/20-questions-game-frontend.git
+```
+
+2. Change directory to the repo folder
+```
+cd <path-to-repository>/20-questions-game-frontend
+```
+
+3. Install the dependencies using npm 
+```
+npm i
+```
+
+4. See `Option 2` in the `How to start the app` section below to start the app
 
 
-## Home Page
+## How to start the app
 
-## Services Page
+### Option 1
 
-## Locations Page
+* The easiest way to start up the app is to [click here](http://20-questions-game-frontend.vercel.app/)
 
-## About Us Page
+### Option 2
 
-## Contact Us Page
+You can start the app locally or run it on a development environment using the following commands:
+* **Start app locally**
+```
+npm start
+```
 
-## Admin Page
+* **Run on a local dev environment**
+```
+npm run dev
+```
+
+## Available Scripts
+
+Most available scripts are NextJS built-in scripts but the most useful ones are:
+
+*  `npm start`
+
+**Starts the app**
+Open [http://localhost:3000](http://localhost:3000) in your browser to view it.
+The page will refresh if you make edits to the code.
+You will also see any compile and lint errors in the console.
+
+
+* `npm run dev`
+
+**Starts the app using a dev environment**
+Open [http://localhost:3000](http://localhost:3000) in your browser to view it.
+The page will refresh if you make edits to the code.
+You will also see any compile and lint errors in the console.
+
+* `npm run lint`
+**Checks the app for lint errors**
+
+* `npm run build`
+**Builds the app locally**
+
+![expeditemovers-logo](https://res.cloudinary.com/hellodewa/image/upload/v1616559517/expeditemovers/images/logos/main_nav_logo_iotyev.png)
+
