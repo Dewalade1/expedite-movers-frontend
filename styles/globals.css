@@ -83,7 +83,7 @@ div.col {
 /* TITLES */
 
 .primary-title {
-  color:#77a7ee;
+  color:#005881;
   font-size: xx-large;
   display: block;
   text-align: center;
@@ -91,19 +91,19 @@ div.col {
 }
 
 .secondary-title {
-  color: #77a7ee;
+  color: #005881;
   font-size: large;
   display: block;
   text-align: center;
 }
 
 .primary-title-dark {
-  color:#77a7ee;
+  color:#005881;
   font-size: xx-large;
 }
 
 .secondary-title-dark {
-  color: #77a7ee;
+  color: #005881;
   display: block;
 }
 
@@ -121,7 +121,7 @@ div.col {
 }
 
 #header.color-change {
-  background-color: #8b8a8b;
+  background-color: #eeeeee;
   transition: background-color 250ms linear;
   width: 100%;
 }
@@ -165,7 +165,7 @@ ul.navbar-nav {
 }
 
 .my-nav-link {
-  color: #77a7ee;
+  color: #005881;
   position: relative;
   text-decoration: none;
 }
@@ -177,14 +177,14 @@ ul.navbar-nav {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #77a7ee;
+  background-color: #005881;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
 
 .my-nav-link:hover {
-  color:  #77a7ee;
+  color:  #005881;
 }
 
 .my-nav-link:hover::before {
@@ -193,7 +193,7 @@ ul.navbar-nav {
 }
 
 .home-nav-link {
-  color: #77a7ee;
+  color: #005881;
   position: relative;
   text-decoration: none;
 }
@@ -205,14 +205,14 @@ ul.navbar-nav {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color:  #77a7ee;
+  background-color:  #005881;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
 
 .home-nav-link:hover {
-  color:  #77a7ee;
+  color:  #005881;
 }
 
 .home-nav-link:hover::before {
@@ -272,14 +272,14 @@ ul.navbar-nav {
 }
 
 #landing-page-text {
-   color: #3866b3;
-   display: flex;
-   justify-content: center;
-   margin-left: 14%;
+  color: #3866b3;
+  display: flex;
+  justify-content: center;
+  margin-left: 14%;
 }
 
 #landing-page-wrapper {
-  background-color: #00000;
+  background-color: #000000;
   background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1621808915/expeditemovers/images/sys/home-pg-background_jpqpmu.jpg');
   background-attachment: fixed;
   background-position: bottom;
@@ -431,6 +431,9 @@ div.location-card {
 /* ABOUT US PAGE */
 
 .about-us-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   padding: 7em 0;
 }
 
@@ -600,10 +603,11 @@ img.MuiCardMedia-img {
 
 #footer-img {
   aspect-ratio: 388/95;
-  width: 200px; 
+  width: 12em; 
 }
 
 #footer-logo {
+  aspect-ratio: 388/45;
   margin-top: 0.1em;
 }
 
@@ -804,7 +808,7 @@ img.MuiCardMedia-img {
 
   .section-wrapper {
     min-height: 500px;
-    padding: 10% 0 20% 0;
+    padding: 5% 0 5% 0;
   }
 
   /*  MEDIUM DEVICE HOME PAGE */
@@ -921,7 +925,6 @@ img.MuiCardMedia-img {
   }
 
   #footer-img {
-    width: 180px; 
     height: 70px;
   }
 
@@ -934,10 +937,6 @@ img.MuiCardMedia-img {
     justify-content: center;
     margin-top: 1em;
     padding-bottom: 1em;
-  }
-
-  #footer-img {
-    width: 40%;
   }
 
   .footer-text {
@@ -1005,6 +1004,10 @@ img.MuiCardMedia-img {
     min-height: 60em;
   }
 
+  #site-logo {
+    width: 7.5em;
+  }
+
   /* SMALL DEVICE TITLES */
 
   .secondary-title {
@@ -1015,31 +1018,31 @@ img.MuiCardMedia-img {
 
   /* SMALL DEVICE LINKS */
 
-.my-nav-link {
-  color: #428af7;
-  position: relative;
-  text-decoration: none;
-}
+  .my-nav-link {
+    color: #428af7;
+    position: relative;
+    text-decoration: none;
+  }
 
-.my-nav-link::before {
-  width: 6%;
-  bottom: 0;
-  left: auto;
-  right: auto;
-}
+  .my-nav-link::before {
+    width: 6%;
+    bottom: 0;
+    left: auto;
+    right: auto;
+  }
 
-.home-nav-link::before {
-  width: 6%;
-  bottom: 0;
-  left: auto;
-  right: auto;
-}
+  .home-nav-link::before {
+    width: 6%;
+    bottom: 0;
+    left: auto;
+    right: auto;
+  }
 
 
   /* SMALL DEVICE HEADER */
 
   .background-change-on-nav-open {
-    background-color: #313033;
+    background-color: #ffffff;
   }
 
   #large-devices-nav {
@@ -1063,13 +1066,14 @@ img.MuiCardMedia-img {
   }
 
   .sm-devices-nav-list {
-    background-color: #3b3b3b;
+    background-color: #ffffff;
     bottom: 0;
     display: flex;
     height: 100%;
     justify-content: center;
     margin: 0;
     padding: 1.2em 0;
+    transition: background-color 250ms linear;
     -webkit-transition: background-color 250ms linear;
     width: 100%;
   }
@@ -1132,7 +1136,7 @@ img.MuiCardMedia-img {
     padding-bottom: 0.8em;
   }
 
-  /* LOWER RES MEDIUM DEVICES LOCATIONS PAGE */
+  /* SMALL DEVICE DEVICES LOCATIONS PAGE */
 
   div.location-card {
     min-width: 89%;
@@ -1140,25 +1144,22 @@ img.MuiCardMedia-img {
     margin-top: 50px;
   }
 
-  /* LOWER RES MEDIUM DEVICES SERVICES PAGE */
+  /* SMALL DEVICE DEVICES SERVICES PAGE */
 
   .info-container{
     min-height: 20em;
     width: 100%;
-    z-index: 0;
   }
 
   .info-container-left {
     padding-bottom: 3em;
     padding-left: 3%;
     padding-right: 3%;
-    z-index: 0;
   }
 
   .info-container-right {
     padding-left: 3%;
     padding-right: 3%;
-    z-index: 0;
   }
 
   #services-header {
@@ -1209,7 +1210,6 @@ img.MuiCardMedia-img {
     margin-top: .5em;
     min-height: calc(80% + 90px);
     width: 100%;
-    z-index: 0;
   }
 
   .service-info-right {
@@ -1217,39 +1217,40 @@ img.MuiCardMedia-img {
     margin-top: .5em;
     min-height: calc(100% + 90px);
     width: 100%;
-    z-index: 0;
   }  
 
-  /* LOWER RES MEDIUM DEVICES ABOUT US PAGE */
+  /* SMALL DEVICES ABOUT US PAGE */
 
   .about-us-container {
-    min-height: 60em;
+    display: block;
+    padding: 5em 0 0 0 !important;
+    min-height: 30em;
     width: 100vw;
-    z-index: 0;
   }
 
   .about-us-img-container {
     display: block;
-    position: relative;
-    top: 0;
+    margin-top: 4em;
     order: 0;
     width: 100%;
   }
 
   img.about-us-img {
+    aspect-ratio: 16/12;
     border-radius: 0em;
     width: 100%;
   }
 
   .about-us-info {
-    bottom: 0;
     display: block;
-    position: relative;
+    font-size: 22px;
+    margin-left: 1.3em;
     order: 1;
-    width: 100vw;
+    padding: 0 0 0 1.5vw;
+    width: 90vw;
   }
 
-  /* LOWER RES MEDIUM DEVICES ADMIN PAGE */
+  /* SMALL DEVICES ADMIN PAGE */
 
   h1#admin-header-title {
     font-size: 2.8em;
@@ -1302,12 +1303,12 @@ img.MuiCardMedia-img {
   background-image: url('https://res.cloudinary.com/hellodewa/image/upload/v1621804935/expeditemovers/images/sys/admin-header-background_kz7cz1.jpg');
   background-position: bottom;
   height: 450px;
- }
+  }
 
   
   #admin-header-overlay {
   height: 450px;
- }
+  }
 
   #admin-header-title {
     color: #000000;
@@ -1353,6 +1354,7 @@ img.MuiCardMedia-img {
   }
 
   #footer-img {
+    aspect-ratio: 388/95;
     height: 3.6em;
   }
 
@@ -1372,6 +1374,7 @@ img.MuiCardMedia-img {
 
   .footer-text {
     padding-top: 1.2em;
+    font-size: 1.3em;
   }
 
   .footer-title {
