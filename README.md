@@ -28,6 +28,22 @@ This is the repo of the official website of Expeditemovers Ltd.
 * [Vercel](https://vercel.com) - for hosting the app
 * [Git and GitHub](https://git-scm.com) - for tracking, storage and version control
 
+## How I worked on this Project
+
+* I built the app based on `Let's Enhance` website design: [Link to website](https://letsenhance.io/)
+* I used feature branches and pull requests in this Project
+    * [Example PRs](https://github.com/Dewalade1/expedite-movers-frontend/pulls?q=is%3Apr+is%3Aclosed)
+    * [Example Branches](https://github.com/Dewalade1/expedite-movers-frontend/branches)
+* I worked documented and fixed bugs using GitHub Issues: [Example Issues](https://github.com/Dewalade1/expedite-movers-frontend/issues)
+
+## Why I built the Project this way
+
+* I didn't use a state management library like Redux on purpose. For this app `useState` and `useReducer` hooks were sufficient. I realized that more and more projects don't use Redux anymore since GraphQL or react-query are often used for data management.
+
+* UI libraries are a great place to find ready-made components that help speed up the dev process. They can also be handy if one only needs a few cusom components. For these reasons, I used `Bootstrap 4` and `Material UI` to style and build the contact form on this website.
+
+* My plan is to become a FullStack Engineer eventually. This is why I chose to build a Custom RESTful API Server which can be found [here](https://github.com/Dewalade1/expedite-movers-backend). I built this API using the expressJS framework in NodeJS.
+
 ## How to setup the app
 
 ### Option 1
