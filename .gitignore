@@ -36,6 +36,7 @@ yarn-error.log*
 # Local Netlify folder
 .netlify
 
-# Misc folder
+# Misc folders and files
 /.vscode
 /.history
+sentry.properties
