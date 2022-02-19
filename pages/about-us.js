@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Head from 'next/head';
 
 import Layout from '../layout/layout';
@@ -14,6 +13,7 @@ export default function AboutUs () {
       <Layout>
         <Head>
           <title>{`${pagetitle} | Expedite Movers Ltd.`}</title>
+          <link rel="canonical" href="https://expeditemoversng.com/about-us" />
         </Head>
         <header className="align-items-origin" id="about-us-header">
           <div>

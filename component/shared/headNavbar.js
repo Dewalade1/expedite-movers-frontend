@@ -68,9 +68,11 @@ export default function NavBar({onHomePage}) {
 
               return (
                 <li className="nav-item" key={link}>
-                  <Link href={lowerCaseLink == "home" ? "/" : `/${lowerCaseLink}`} key={link}>
-                    <a className={onHomePage ? "nav-link home-nav-link" : "nav-link my-nav-link"}>{link}</a>
-                  </Link>
+                  <div className="nav-item-container">
+                    <Link href={lowerCaseLink == "home" ? "/" : `/${lowerCaseLink}`} key={link}>
+                      <a className={onHomePage ? "nav-link home-nav-link" : "nav-link my-nav-link"}>{link}</a>
+                    </Link>
+                  </div>
                 </li>
               );
             })}

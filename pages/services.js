@@ -14,6 +14,7 @@ export default function Services () {
       <Layout>
         <Head>
           <title>{`${pagetitle} | Expedite Movers Ltd.`}</title>
+          <link rel="canonical" href="https://expeditemoversng.com/services" />
         </Head>
         <header className="align-items-origin" id="services-header">
           <div>

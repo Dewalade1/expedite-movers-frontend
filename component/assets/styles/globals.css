@@ -1025,14 +1025,14 @@ img.MuiCardMedia-img {
   }
 
   .my-nav-link::before {
-    width: 6%;
+    width: 70%;
     bottom: 0;
     left: auto;
     right: auto;
   }
 
   .home-nav-link::before {
-    width: 6%;
+    width: 55%;
     bottom: 0;
     left: auto;
     right: auto;
@@ -1047,6 +1047,13 @@ img.MuiCardMedia-img {
 
   #large-devices-nav {
     display: none;
+  }
+
+  .nav-item-container {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 10%;
+    max-width: 15%;
   }
 
   .nav-visible {
@@ -1095,7 +1102,7 @@ img.MuiCardMedia-img {
   }
 
   li.nav-item:hover {
-    background-color: #4d4d4d;
+    background-color: #ffffffff;
   }
 
   ul.navbar-nav {
@@ -1111,7 +1118,7 @@ img.MuiCardMedia-img {
   }
 
   #landing-page-col-1 {
-    padding: 11em 5em 3em 5em;
+    padding: 11em 10% 3em 4%;
   }
 
   #landing-page-img {

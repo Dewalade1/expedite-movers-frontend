@@ -1,12 +1,13 @@
 import React from 'react';
-
-import Layout from "../layout/layout";
-
+import Head from 'next/head';
 import { Row, Col } from "react-bootstrap";
-
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 import { withStyles, makeStyles } from "@material-ui/core/styles";
+
+import Layout from "../layout/layout";
+
+const pagetitle = "Contact";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,6 +54,11 @@ export default function Contact () {
 
     return (
       <Layout>
+        <Head>
+          <title>{`${pagetitle} | Expedite Movers Ltd.`}</title>
+          <link rel="canonical" href="https://expeditemoversng.com/contact-us" />
+        </Head>
+
         <Row id="contacts-layout">
           <Col xs={12} sm={12} md={12} lg={12} xl={6} id="contact-form-container">
             <form id="contact-form">
@@ -106,7 +112,7 @@ export default function Contact () {
               </Button>
             </form>
           </Col>
-          <Col xs={12} sm={12} md={12} lg={12} xl={6} id="contact-image">
+          <Col className="d-none d-md-block" md={12} lg={12} xl={6} id="contact-image">
             <img src="https://res.cloudinary.com/hellodewa/image/upload/v1619468681/expeditemovers/images/sys/contact-us-side-image_ql8vme.jpg" alt="man calling on a phone" height="100%" width="100%" />
           </Col>
         </Row>

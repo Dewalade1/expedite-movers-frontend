@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Head from 'next/head';
 
 import Layout from '../layout/layout';
@@ -15,6 +14,7 @@ export default function Home() {
     <Layout onHomePage>
       <Head>
         <title>{`${pagetitle} | Expedite Movers Ltd.`}</title>
+        <link rel="canonical" href="https://expeditemoversng.com/" />
       </Head>
       <HomeContent />
       <ClientContent onHomePage />

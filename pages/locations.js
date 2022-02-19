@@ -25,6 +25,7 @@ export default function Locations () {
       <Layout>
         <Head>
           <title>{`${pagetitle} | Expedite Movers Ltd.`}</title>
+          <link rel="canonical" href="https://expeditemoversng.com/locations" />
         </Head>
         <header className="align-items-origin" id="location-header">
           <div>

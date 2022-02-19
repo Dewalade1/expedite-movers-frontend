@@ -1,7 +1,5 @@
 import React from 'react';
-
 import Head from 'next/head';
-
 import { Row, Col } from 'react-bootstrap';
 
 import Card from "@material-ui/core/Card";
@@ -21,7 +19,9 @@ export default function Admin () {
       <Layout>
         <Head>
           <title>{`${pagetitle} | Expedite Movers Ltd.`}</title>
+          <link rel="canonical" href="https://expeditemoversng.com/admin" />
         </Head>
+
         <header className="black-bg-layout" id="admin-header">
           <div id="admin-header-overlay">
             <h1 id="admin-header-title"> Welcome to your Admin </h1>{" "}
